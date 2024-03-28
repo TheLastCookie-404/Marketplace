@@ -8,9 +8,9 @@
         src: url(../project/assets/fonts/Raleway-VariableFont_wght.ttf);
     }
 
-    /* body{
+    body{
         font-family: 'Raleway';
-    } */
+    }
 }
 
 @layer components{

@@ -12,6 +12,7 @@ module.exports = {
       {
         base: {
           "primary": "#ffc700",
+          "primary-content": "#d8ab0c",
           "secondary": "#d32727",
           "accent": "#ffffff",
           "neutral": "#cfcfcf",
