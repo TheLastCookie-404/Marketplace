@@ -8,36 +8,52 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="navbar bg-base-100 py-3.5 px-40">
-      <div class="flex-1">
-        <a class="">
-          <img class="h-20" src="./assets/images/Logo.svg" alt="">
-        </a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-          <li>
-            <a class="btn btn-ghost min-h-6 h-10 mr-8 border-2 border-primary rounded-2xl font-normal hover:bg-primary hover:text-accent">
-              <!-- <img src="./assets/icons/catalog.svg" alt=""> -->
+    <header class="drawer py-3.5 px-40">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="w-full navbar bg-base-100">
+          <div class="flex-1">
+            <a class="">
+              <img class="h-20" src="./assets/images/Logo.svg" alt="">
+            </a>
+          </div>
+          <div class="mx-8">
+            <a class="btn btn-ghost min-h-6 h-10 border-2 border-primary rounded-2xl font-normal hover:bg-primary hover:text-accent">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="9" height="9" fill="#FFC700"/>
                 <rect x="11" width="9" height="9" fill="#FFC700"/>
                 <rect x="11" y="11" width="9" height="9" fill="#FFC700"/>
                 <rect y="11" width="9" height="9" fill="#FFC700"/>
               </svg>
-              <span class="mx-7">Каталог одежды</span>
+              <span class="mx-3">Каталог одежды</span>
             </a>
-          </li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">О нас</a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Распродажа</a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Популярное</a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Контакты</a></li>
-        </ul>
-        <ul class="menu menu-horizontal px-1">
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/telegram.svg" alt=""></a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/vk.svg" alt=""></a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/heart.svg" alt=""></a></li>
-          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/basket.svg" alt=""></a></li>
+          </div>
+          <div class="flex-none hidden xl:block">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">О нас</a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Распродажа</a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Популярное</a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Контакты</a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/vk.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/heart.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/basket.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="flex-none px-3 xl:hidden">
+            <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </label>
+          </div> 
+        </div>
+      </div> 
+      <div class="drawer-side">
+        <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+        <ul class="menu p-4 w-80 min-h-full bg-base-200">
+          <!-- Sidebar content here -->
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
         </ul>
       </div>
     </header>
@@ -60,19 +76,20 @@
       </div>
     </banner>
 
+    <!-- Categories -->
+    <categories class="block py-12 px-40">
+      <div class="text-2xl font-medium">Популярные категории</div>
+      <div class="py-8 flex justify-evenly">
+        <div>
+          <img src="./assets/images/women.png" alt="">
+        </div>
+        <div>
+          <img src="./assets/images/men.png" alt="">
+        </div>
+        <div>
+          <img src="./assets/images/sale.png" alt="">
+        </div>
+      </div>
+    </categories>
   </body>
 </html>
-
-<!-- <li>
-  <details>
-    <summary>
-      Parent
-    </summary>
-    <ul class="p-2 bg-base-100 rounded-t-none">
-      <li><a>О нас</a></li>
-      <li><a>Распродажа</a></li>
-      <li><a>Популярное</a></li>
-      <li><a>Контакты</a></li>
-    </ul>
-  </details>
-</li> -->
