@@ -7,6 +7,69 @@
     <link rel="stylesheet" href="../tailwind/output.css">
   </head>
   <body>
-      
+    <!-- Header -->
+    <header class="navbar bg-base-100 font-raleway py-3.5 px-32">
+      <div class="flex-1">
+        <a class="">
+          <img class="h-20" src="./assets/images/Logo.svg" alt="">
+        </a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a class="btn btn-ghost min-h-6 h-10 mr-8 border-2 border-primary rounded-2xl font-normal hover:bg-primary hover:text-accent">
+              <!-- <img src="./assets/icons/catalog.svg" alt=""> -->
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9" height="9" fill="#FFC700"/>
+                <rect x="11" width="9" height="9" fill="#FFC700"/>
+                <rect x="11" y="11" width="9" height="9" fill="#FFC700"/>
+                <rect y="11" width="9" height="9" fill="#FFC700"/>
+              </svg>
+              <span class="mx-7">Каталог одежды</span>
+            </a>
+          </li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">О нас</a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Распродажа</a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Популярное</a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Контакты</a></li>
+        </ul>
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/vk.svg" alt=""></a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/heart.svg" alt=""></a></li>
+          <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/basket.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <banner class="flex justify-center bg-neutral py-12">
+      <div class="flex w-2/3 h-fit outline-dev">
+        <div class="outline-dev w-1/2 h-fit">
+          <div class="text-6xl uppercase font-light">
+            Найди свой <span class="text-primary">стиль и</span> самого себя
+          </div>
+          <div>dfg</div>
+          <div>dfg</div>
+          <a class="btn btn-primary text-accent text-2xl font-normal min-h-6 h-12 px-8 rounded-3xl uppercase">Перейти</a>
+        </div>
+        <img class="w-1/2" src="./assets/images/banner_image-upscaled.png" alt="">
+      </div>
+    </banner>
+
   </body>
 </html>
+
+<!-- <li>
+  <details>
+    <summary>
+      Parent
+    </summary>
+    <ul class="p-2 bg-base-100 rounded-t-none">
+      <li><a>О нас</a></li>
+      <li><a>Распродажа</a></li>
+      <li><a>Популярное</a></li>
+      <li><a>Контакты</a></li>
+    </ul>
+  </details>
+</li> -->

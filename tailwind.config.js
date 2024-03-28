@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./project/**/*.{html,js}"],
+  content: ["./project/**/*.{html,js,php}"],
   theme: {
     extend: {},
+    fontFamily: {
+      raleway: ['Raleway'],
+    },
   },
   daisyui: {
     themes: [
@@ -10,7 +13,7 @@ module.exports = {
         base: {
           "primary": "#ffc700",
           "secondary": "#d32727",
-          "accent": "#b52b2b",
+          "accent": "#ffffff",
           "neutral": "#cfcfcf",
           "base-100": "#ffffff",
           "info": "#38bdf8",

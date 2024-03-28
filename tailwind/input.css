@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Raleway';
+        src: url(../project/assets/fonts/Raleway-VariableFont_wght.ttf);
+    }
+
+    /* body{
+        font-family: 'Raleway';
+    } */
+}
+
+@layer components{
+    .outline-dev{
+        outline: 1px solid red;
+    }
+}
