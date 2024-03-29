@@ -8,6 +8,11 @@
         src: url(../project/assets/fonts/Raleway-VariableFont_wght.ttf);
     }
 
+    @font-face {
+        font-family: 'Martel';
+        src: url(../project/assets/fonts/Martel-ExtraLight.ttf);
+    }
+
     body{
         font-family: 'Raleway';
     }
