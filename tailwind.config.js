@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./project/**/*.{html,js,php}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'fill': 'repeat(auto-fill, minmax(0, 10fr))',
+        'fit': 'repeat(auto-fit, minmax(0, 1fr))',
+      },
+      fontSize: {
+        'xxs': '10px',
+      },
+    },
     fontFamily: {
       raleway: ['Raleway'],
       martel: ['Martel'],
