@@ -3097,6 +3097,22 @@ html:has(.drawer-toggle:checked) {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
 .min-h-6 {
   min-height: 1.5rem;
 }
@@ -3303,6 +3319,11 @@ html:has(.drawer-toggle:checked) {
   background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+}
+
 .fill-accent {
   fill: var(--fallback-a,oklch(var(--a)/1));
 }
@@ -3334,6 +3355,14 @@ html:has(.drawer-toggle:checked) {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
 }
 
 .px-1 {
@@ -3445,6 +3474,18 @@ html:has(.drawer-toggle:checked) {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -3485,6 +3526,14 @@ html:has(.drawer-toggle:checked) {
 
 .group:hover .group-hover\:fill-primary {
   fill: var(--fallback-p,oklch(var(--p)/1));
+}
+
+.group:hover .group-hover\:fill-secondary {
+  fill: var(--fallback-s,oklch(var(--s)/1));
+}
+
+.group:hover .group-hover\:stroke-secondary {
+  stroke: var(--fallback-s,oklch(var(--s)/1));
 }
 
 @media (min-width: 1280px) {
