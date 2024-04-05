@@ -26,14 +26,14 @@
           </div>
           <div class="flex-none hidden xl:block">
             <ul class="menu menu-horizontal px-1">
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">О нас</a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Распродажа</a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Популярное</a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 rounded-2xl hover:bg-primary hover:text-accent">Контакты</a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/telegram.svg" alt=""></a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/vk.svg" alt=""></a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/heart.svg" alt=""></a></li>
-              <li><a class="btn btn-ghost font-normal min-h-6 h-10 p-2 rounded-2xl"><img src="./assets/icons/basket.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost btn-navig navig-hover">О нас</a></li>
+              <li><a class="btn btn-ghost btn-navig navig-hover">Распродажа</a></li>
+              <li><a class="btn btn-ghost btn-navig navig-hover">Популярное</a></li>
+              <li><a class="btn btn-ghost btn-navig navig-hover">Контакты</a></li>
+              <li><a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/heart.svg" alt=""></a></li>
+              <li><a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a></li>
             </ul>
           </div>
           <div class="flex-none px-3 xl:hidden">
@@ -46,7 +46,6 @@
       <div class="drawer-side">
         <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
         <ul class="menu p-4 w-80 min-h-full bg-base-200">
-          <!-- Sidebar content here -->
           <li><a>Sidebar Item 1</a></li>
           <li><a>Sidebar Item 2</a></li>
         </ul>
@@ -280,48 +279,44 @@
       </div>
     </info> 
 
-    <footer class="grid grid-cols-3 justify-items-center py-6 px-40 border-y-2 bg-base-100 text-base-content border-base-300">
-      <a class="justify-self-start">
-        <img class="h-20" src="./assets/icons/logo.svg" alt="">
-      </a>
-      <div class="flex items-center gap-3">
-        <a class="link"><img src="./assets/icons/telegram.svg" alt=""></a>
-        <a class="link"><img src="./assets/icons/vk.svg" alt=""></a>
+    <!-- Footer -->
+    <footer>
+      <div class="grid grid-cols-3 justify-items-center py-6 px-40 border-y-2 bg-base-100 text-base-content border-base-300">
+        <a class="justify-self-start">
+          <img class="h-20" src="./assets/icons/logo.svg" alt="">
+        </a>
+        <div class="flex items-center gap-3">
+          <a class="link"><img src="./assets/icons/telegram.svg" alt=""></a>
+          <a class="link"><img src="./assets/icons/vk.svg" alt=""></a>
+        </div>
+        <div class="flex flex-col justify-center justify-self-end gap-3 text-right">
+          <a class="link link-hover">+7 777 231 33 44</a>
+          <a class="link link-hover" >fashion.ds@gmail.com</a>
+        </div>
       </div>
-      <div class="flex flex-col justify-center justify-self-end gap-3 text-right">
-        <a class="link link-hover">+7 777 231 33 44</a>
-        <a class="link link-hover" >fashion.ds@gmail.com</a>
+      <div class="grid grid-cols-3 justify-items-center py-10 px-40 bg-base-100 text-base-content border-base-300">
+        <div class="flex items-end justify-self-start  text-xs">
+          © Все права защищены - FASHION | DSTYLE, 2024
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover">О нас</a>
+            <a class="link link-hover">Распродажа</a>
+            <a class="link link-hover">Популярное</a>
+            <a class="link link-hover">Контакты</a>
+          </nav> 
+          <nav>
+            <div class="grid grid-flow-col gap-4">
+              <a class="link link-hover">Каталог</a>
+              <a class="link link-hover">Удобство</a>
+            </div>
+          </nav>
+        </div>
+        <div class="flex flex-col items-end justify-end justify-self-end">
+          <span>г. Алматы</span>
+          <span>Кабанбай б. 279</span>
+        </div>
       </div>
     </footer>
-    <footer class="footer footer-center gap-y-3 p-10 bg-base-100 text-base-content rounded">
-      <div>
-        <nav class="grid grid-flow-col gap-4">
-          <a class="link link-hover">О нас</a>
-          <a class="link link-hover">Распродажа</a>
-          <a class="link link-hover">Популярное</a>
-          <a class="link link-hover">Контакты</a>
-        </nav> 
-        <nav>
-          <div class="grid grid-flow-col gap-4">
-            <a class="link link-hover">Каталог</a>
-            <a class="link link-hover">Удобство</a>
-          </div>
-        </nav>
-      </div>
-    </footer>
-    
-    <!-- <footer class="grid grid-cols-3 justify-items-center py-6 px-40 bg-base-100 text-base-content border-base-300">
-      <div class="justify-self-start">
-
-      </div>
-
-      <div class="flex items-center">
-
-      </div>
-      
-      <div class="flex flex-col justify-center justify-self-end gap-3 text-right">
-
-      </div>
-    </footer> -->
   </body>
 </html>

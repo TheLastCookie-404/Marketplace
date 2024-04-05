@@ -22,4 +22,12 @@
     .outline-dev{
         outline: 1px solid red;
     }
+
+    .btn-navig{
+        @apply content-center font-normal min-h-6 h-10 rounded-2xl;
+    }
+
+    .navig-hover{
+        @apply hover:bg-primary hover:text-accent;
+    }
 }
