@@ -6,11 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../tailwind/output.css">
   </head>
-  <body>
+  <body data-theme="base">
     <!-- Header -->
     <header class="drawer py-3.5 px-40">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
-      <div class="drawer-content flex flex-col">
+      <div class="drawer-content flex">
         <!-- Navbar -->
         <div class="w-full navbar bg-base-100">
           <div class="flex-1">
@@ -47,9 +47,19 @@
       </div> 
       <div class="drawer-side">
         <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
-        <ul class="menu p-4 w-80 min-h-full bg-base-200">
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
+        <ul class="menu p-4 w-80 min-h-full bg-base-200 text-xl">
+          <li class="self-end">
+            <a href="" class="w-fit h-fit">
+              <img src="./assets/icons/cross.svg" alt="">
+            </a>
+          </li>
+          <li><a class="navig-hover">О нас</a></li>
+          <div class="divider"></div> 
+          <li><a class="navig-hover">Распродажа</a></li>
+          <div class="divider"></div> 
+          <li><a class="navig-hover">Популярное</a></li>
+          <div class="divider"></div> 
+          <li><a class="navig-hover">Контакты</a></li>
         </ul>
       </div>
     </header>
@@ -76,9 +86,18 @@
     <categories class="block py-12 px-40">
       <div class="text-2xl font-medium">Популярные категории</div>
       <div class="py-10 grid grid-cols-3 justify-items-center gap-6 justify-evenly">
-        <img src="./assets/images/women.png" alt="">
-        <img src="./assets/images/men.png" alt="">
-        <img src="./assets/images/sale.png" alt="">
+        <div class="relative">
+          <img class="brightness-90" src="./assets/images/women.png" alt="">
+          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Женщинам</div>
+        </div>
+        <div class="relative">
+          <img class="brightness-90" src="./assets/images/men.png" alt="">
+          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Мужчинам</div>
+        </div>
+        <div class="relative">
+          <img class="brightness-90" src="./assets/images/sale.png" alt="">
+          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Распродажа</div>
+        </div>
       </div>
     </categories>
 
@@ -86,7 +105,7 @@
     <items class="block py-12 px-40">
       <div class="text-2xl font-medium mb-10">Женщинам</div>
       <div class="grid grid-cols-4 gap-6 justify-items-center mb-20">
-        <div class="max-w-72 flex flex-col gap-3 text-sm">
+        <div class="max-w-72 flex flex-col gap-3 text-sm relative">
           <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
           <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
@@ -95,6 +114,14 @@
             <span class="line-through">31.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
+          <div class="outline-dev w-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+            <div class="outline-dev">
+              <img src="./assets/icons/" alt="">
+            </div>
+            <div class="w-1/6 aspect-square grid place-content-center p-1.5 rounded-full bg-primary">
+              <img src="./assets/icons/heart-line.svg" alt="">
+            </div>
+          </div>
         </div>
         <div class="max-w-72 flex flex-col gap-3 text-sm">
           <img src="./assets/images/items/image2.jpg" alt="">
