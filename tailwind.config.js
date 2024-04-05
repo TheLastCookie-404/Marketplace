@@ -20,6 +20,16 @@ module.exports = {
     themes: [
       {
         base: {
+          // "primary": "#ffffff",
+          // "primary-content": "#d8ab0c",
+          // "secondary": "#d32727",
+          // "accent": "#ffc700",
+          // "neutral": "#cfcfcf",
+          // "base-100": "#ffffff",
+          // "info": "#38bdf8",
+          // "success": "#00e8aa",
+          // "warning": "#fcd34d",
+          // "error": "#ff6382",
           "primary": "#ffc700",
           "primary-content": "#d8ab0c",
           "secondary": "#d32727",
