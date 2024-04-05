@@ -28,6 +28,6 @@
     }
 
     .navig-hover{
-        @apply hover:bg-primary hover:text-accent;
+        @apply hover:bg-accent hover:text-primary;
     }
 }

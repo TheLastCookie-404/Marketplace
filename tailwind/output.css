@@ -509,12 +509,12 @@ html {
 }
 
 :root {
-  --p: 85.5547% 0.174878 88.008384;
+  --p: 100% 0 0;
   --b2: 93% 0 0;
   --b3: 86% 0 0;
   --bc: 20% 0 0;
+  --pc: 20% 0 0;
   --sc: 91.2288% 0.041284 27.084962;
-  --ac: 20% 0 0;
   --nc: 17.0903% 0 0;
   --inc: 15.0703% 0.027798 232.66148;
   --suc: 16.5009% 0.034564 165.278339;
@@ -529,9 +529,9 @@ html {
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --pc: 76.073% 0.153621 89.337073;
+  --ac: 76.073% 0.153621 89.337073;
   --s: 56.1441% 0.206419 27.084962;
-  --a: 100% 0 0;
+  --a: 85.5547% 0.174878 88.008384;
   --n: 85.4514% 0 0;
   --b1: 100% 0 0;
   --in: 75.3513% 0.138989 232.66148;
@@ -1875,9 +1875,9 @@ html:has(.drawer-toggle:checked) {
 
 .navig-hover:hover {
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
   --tw-text-opacity: 1;
-  color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity)));
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
 }
 
 .m-auto {
@@ -2108,9 +2108,9 @@ html:has(.drawer-toggle:checked) {
   border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
 }
 
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
+.bg-accent-content {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity)));
 }
 
 .bg-base-100 {
@@ -2128,17 +2128,8 @@ html:has(.drawer-toggle:checked) {
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
 }
 
-.bg-primary-content {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
-}
-
 .fill-accent {
   fill: var(--fallback-a,oklch(var(--a)/1));
-}
-
-.fill-primary {
-  fill: var(--fallback-p,oklch(var(--p)/1));
 }
 
 .stroke-current {
@@ -2271,14 +2262,14 @@ html:has(.drawer-toggle:checked) {
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity)));
 }
 
+.text-accent-content {
+  --tw-text-opacity: 1;
+  color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
+}
+
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-}
-
-.text-primary-content {
-  --tw-text-opacity: 1;
-  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
 
 .text-secondary {
@@ -2286,25 +2277,22 @@ html:has(.drawer-toggle:checked) {
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
 
-.hover\:bg-primary:hover {
+.hover\:bg-accent:hover {
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
-
-.hover\:fill-base-100:hover {
-  fill: var(--fallback-b1,oklch(var(--b1)/1));
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
 
 .group:hover .group-hover\:fill-primary {
   fill: var(--fallback-p,oklch(var(--p)/1));
-}
-
-.group:hover .group-hover\:fill-accent {
-  fill: var(--fallback-a,oklch(var(--a)/1));
 }
 
 @media (min-width: 1280px) {
