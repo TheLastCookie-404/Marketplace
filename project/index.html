@@ -8,11 +8,11 @@
   </head>
   <body data-theme="base">
     <!-- Header -->
-    <header class="drawer py-3.5 2xl:px-40 xs:px-10 px-2">
+    <header class="drawer py-3.5 2xl:px-40 xs:px-10 px-5">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
       <div class="drawer-content flex">
         <!-- Navbar -->
-        <div class="w-full navbar bg-base-100">
+        <div class="w-full navbar p-0 bg-base-100">
           <div class="flex-1">
             <a class="">
               <img class="h-20" src="./assets/icons/logo.svg" alt="">
@@ -94,7 +94,7 @@
     </header>
 
     <!-- Banner -->
-    <banner class="flex justify-center bg-neutral py-12 px-20">
+    <banner class="flex justify-center bg-neutral py-12 2xl:px-40 xs:px-10 px-5">
       <div class="flex lg:flex-row flex-col-reverse items-center justify-center xl:gap-32 lg:gap-20 md:gap-y-14 gap-10">
         <div class="flex flex-col gap-7">
           <div class="text-6xl uppercase">
@@ -112,9 +112,9 @@
     </banner>
 
     <!-- Categories -->
-    <categories class="block py-12 2xl:px-40 xs:px-10 px-2">
+    <categories class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Популярные категории</div>
-      <div class="grid grid-cols-3 justify-items-center gap-6 justify-evenly">
+      <div class="flex flex-wrap justify-evenly items-center gap-6">
         <div class="relative">
           <img class="brightness-90" src="./assets/images/women.png" alt="">
           <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Женщинам</div>
@@ -126,14 +126,15 @@
         <div class="relative">
           <img class="brightness-90" src="./assets/images/sale.png" alt="">
           <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Распродажа</div>
+          <!-- w-full text-center sm:text-2xl xs:text-lg text-base text-primary absolute bottom-0 py-6 -->
         </div>
       </div>
     </categories>
 
     <!-- Items -->
-    <items class="block py-12 2xl:px-40 xs:px-10 px-2">
+    <items class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Женщинам</div>
-      <div class="grid lg:grid-cols-4 grid-cols-2 gap-x-6 gap-y-10 justify-items-center mb-10">
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
         <div class="max-w-72 flex flex-col gap-3 text-sm">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
@@ -158,7 +159,7 @@
         </div>
         <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image2.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -179,7 +180,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image3.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -200,7 +201,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image4.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -222,10 +223,10 @@
         </div>
       </div>
       <div class="text-2xl font-medium mb-10">Мужчинам</div>
-      <div class="grid lg:grid-cols-4 grid-cols-2 gap-x-6 gap-y-10 justify-items-center mb-10">
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
         <div class="max-w-72 flex flex-col gap-3 text-sm">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image5.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -247,7 +248,7 @@
         </div>
         <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image6.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -268,7 +269,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image7.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -289,7 +290,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image8.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -311,10 +312,10 @@
         </div>
       </div>
       <div class="text-2xl font-medium mb-10">Распродажа</div>
-      <div class="grid lg:grid-cols-4 grid-cols-2 gap-x-6 gap-y-10 justify-items-center mb-10">
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
         <div class="max-w-72 flex flex-col gap-3 text-sm">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image9.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -336,7 +337,7 @@
         </div>
         <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image10.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -357,7 +358,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image11.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -378,7 +379,7 @@
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
-            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <img class="w-full" src="./assets/images/items/image12.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
                 <span>new</span>
@@ -402,7 +403,7 @@
     </items>
 
     <!-- AboutUs -->
-    <about class="block py-12 2xl:px-40 xs:px-10 px-2">
+    <about class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">О нас</div>
       <div class="flex lg:flex-row flex-col items-center justify-center gap-32 text-center">
         <img class="lg:w-1/3 sm:w-2/3 w-full object-contain" src="./assets/images/about-image.jpg" alt="">
@@ -423,9 +424,9 @@
     </about>
 
     <!-- Info -->
-    <info class="block py-12 2xl:px-40 xs:px-10 px-2">
+    <info class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Удобство для вас</div>
-      <div class="grid grid-cols-2 gap-y-10 gap-x-24 m-auto justify-items-center w-fit mb-20">
+      <div class="grid grid-cols-2 gap-y-10 sm:gap-x-24 xs:gap-x-12 gap-x-8 m-auto justify-items-center w-fit mb-20">
         <div class="flex md:flex-row flex-col md:text-left text-center items-center gap-6">
           <img src="./assets/icons/warranty.svg" alt="">
           <div>
@@ -471,20 +472,20 @@
 
     <!-- Footer -->
     <footer class="">
-      <div class="grid grid-cols-3 justify-items-center py-6 2xl:px-40 xs:px-10 px-2 border-y-2 bg-base-100 text-base-content border-base-300">
+      <div class="grid grid-cols-3 justify-items-center py-6 2xl:px-40 xs:px-10 px-5 border-y-2 bg-base-100 text-base-content border-base-300">
         <a class="justify-self-start">
           <img class="h-20" src="./assets/icons/logo.svg" alt="">
         </a>
-        <div class="flex items-center gap-3">
-          <a class="link"><img src="./assets/icons/telegram.svg" alt=""></a>
-          <a class="link"><img src="./assets/icons/vk.svg" alt=""></a>
+        <div class="flex items-center gap-1">
+          <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a>
+          <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a>
         </div>
         <div class="flex flex-col justify-center justify-self-end gap-3 sm:text-sm text-xs text-right">
           <a class="link link-hover">+7 777 231 33 44</a>
           <a class="link link-hover" >fashion.ds@gmail.com</a>
         </div>
       </div>
-      <div class="flex items-end sm:flex-row flex-col gap-5 py-12 2xl:px-40 xs:px-10 px-2 bg-base-100 text-base-content border-base-300">
+      <div class="flex items-end sm:flex-row flex-col gap-5 py-12 2xl:px-40 xs:px-10 px-5 bg-base-100 text-base-content border-base-300">
         <div class="flex w-full items-center sm:justify-start justify-center text-xs sm:order-1 order-2">
           © Все права защищены - FASHION | DSTYLE, 2024
         </div>
