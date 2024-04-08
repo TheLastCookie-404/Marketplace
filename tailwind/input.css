@@ -19,7 +19,7 @@
 }
 
 @layer components{
-    .outline-dev{
+    .dev{
         outline: 1px solid red;
     }
 

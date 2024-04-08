@@ -38,7 +38,7 @@
               <li><a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a></li>
             </ul>
           </div>
-          <div class="flex-none px-3 xl:hidden">
+          <div class="xl:hidden flex-none pl-3">
             <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
               <img src="./assets/icons/drawer-btn.svg" alt="">
             </label>
@@ -47,13 +47,13 @@
       </div> 
       <div class="drawer-side z-50">
         <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
-        <ul class="menu gap-3 p-4 w-80 min-h-full bg-base-200 text-xl">
+        <ul class="menu xs:w-80 w-full gap-3 p-4 min-h-full bg-base-200 text-xl">
           <li class="self-end mb-4">
             <label for="my-drawer-3" aria-label="close sidebar" class="btn btn-square btn-ghost">
               <img src="./assets/icons/cross.svg" alt="">
             </label>
           </li>
-          <ul class="flex gap-2 md:flex-col">
+          <ul class="flex gap-2 md:flex-col xs:flex-row flex-col items-start">
             <li class="md:hidden block">
               <a class="btn btn-ghost btn-navig navig-hover border-2 border-accent group">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,25 +65,21 @@
             <li>
               <a class="btn btn-ghost btn-navig text-xl md:justify-start md:p-4 p-2">
                 <img src="./assets/icons/heart.svg" alt="">
-                <div class="text-xl md:block hidden none ml-3">Понравившееся</div>
+                <div class="text-xl md:block xs:hidden block ml-3">Понравившееся</div>
               </a>
             </li>
             <li>
               <a class="btn btn-ghost btn-navig text-xl md:justify-start md:p-4 p-2">
                 <img src="./assets/icons/basket.svg" alt="">
-                <div class="text-xl md:block hidden none ml-3">Корзина</div>
+                <div class="text-xl md:block xs:hidden block ml-3">Корзина</div>
               </a>
             </li>
           </ul>
           <div class="divider"></div>
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">О нас</a></li>
-          <!-- <div class="divider"></div>  -->
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Распродажа</a></li>
-          <!-- <div class="divider"></div>  -->
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Популярное</a></li>
-          <!-- <div class="divider"></div>  -->
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Контакты</a></li>
-          <!-- <div class="divider"></div>  -->
           <div class="divider">Соц.сети</div>
           <ul class="flex justify-around">
             <li><a class="btn btn-ghost btn-navig text-xl">Телега<img src="./assets/icons/telegram.svg" alt=""></a></li>
@@ -96,14 +92,14 @@
     <!-- Banner -->
     <banner class="flex justify-center bg-neutral py-12 2xl:px-40 xs:px-10 px-5">
       <div class="flex lg:flex-row flex-col-reverse items-center justify-center xl:gap-32 lg:gap-20 md:gap-y-14 gap-10">
-        <div class="flex flex-col gap-7">
+        <div class="xl:w-1/3 w-full flex flex-col sm:gap-7 gap-3">
           <div class="xs:text-6xl text-4xl uppercase">
             Найди свой <br> <span class="text-accent-content">стиль и</span> <br> самого себя
           </div>
           <div class="divider divider-start divider-base-300 text-accent-content xs:text-2xl text-xl uppercase">Эксклюзивный бутик</div>
           <div class="text-sm">
-            Мы предлагаем широкий ассортимент модной <br> одежды для <span class="text-accent-content">мужчин и женщин.</span> <br>
-            Наш магазин отличается <span class="text-accent-content">высоким качеством <br> товаров и доступными ценами.</span>
+            Мы предлагаем широкий ассортимент модной одежды для <span class="text-accent-content">мужчин и женщин.</span>
+            Наш магазин отличается <span class="text-accent-content">высоким качеством товаров и доступными ценами.</span>
           </div>
           <a class="btn bg-accent-content hover:bg-accent border-none text-primary text-2xl font-normal w-fit min-h-6 h-12 px-8 rounded-3xl uppercase">Перейти</a>
         </div>
@@ -135,7 +131,7 @@
     <items class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Женщинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
-        <div class="max-w-72 flex flex-col gap-3 text-sm">
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -224,7 +220,7 @@
       </div>
       <div class="text-2xl font-medium mb-10">Мужчинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
-        <div class="max-w-72 flex flex-col gap-3 text-sm">
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image5.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -313,7 +309,7 @@
       </div>
       <div class="text-2xl font-medium mb-10">Распродажа</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
-        <div class="max-w-72 flex flex-col gap-3 text-sm">
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image9.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -377,7 +373,8 @@
             <span class="line-through">31.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-        </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
+        </div>
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image12.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -405,19 +402,19 @@
     <!-- AboutUs -->
     <about class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">О нас</div>
-      <div class="flex lg:flex-row flex-col items-center justify-center gap-32 text-center">
+      <div class="flex lg:flex-row flex-col items-center justify-center sm:gap-32 xs:gap-20 gap-12 text-center">
         <img class="lg:w-1/3 sm:w-2/3 w-full object-contain" src="./assets/images/about-image.jpg" alt="">
-        <div class="flex flex-col gap-7">
-          <div class="text-5xl uppercase font-martel mb-2">Fashion | Dstyle</div>
-          <div class="">Наши наряды – это стильные и по-настоящему <br> функциональные вещи из лучших материалов.</div>
+        <div class="flex flex-col sm:gap-7 xs:gap-6 gap-4">
+          <div class="sm:text-5xl xs:text-4xl text-3xl uppercase font-martel mb-2">Fashion | Dstyle</div>
+          <div class="sm:text-base xs:text-sm text-xs">Наши наряды – это стильные и по-настоящему <br> функциональные вещи из лучших материалов.</div>
           <div class="w-2/3 m-auto divider divider-neutral"></div>
-          <div class="">
+          <div class="sm:text-base xs:text-sm text-xs">
             Являясь прямым производителем, мы <br> придерживаемся доступных цен при неизменном <br> качестве. Работая над лекалами, 
             выбирая ткани и <br> фурнитуру, мы думаем о свободе движений, о <br> тактильности и особенном самоощущении, которое <br>
             должна дарить наша одежда.
           </div>
           <div class="w-2/3 m-auto divider divider-neutral"></div>
-          <div class="">Наши наряды – это стильные и по-настоящему <br> функциональные вещи из лучших материалов.</div>
+          <div class="sm:text-base xs:text-sm text-xs">Наши наряды – это стильные и по-настоящему <br> функциональные вещи из лучших материалов.</div>
           <div class="text-sm"></div>
         </div>
       </div>
@@ -426,8 +423,8 @@
     <!-- Info -->
     <info class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Удобство для вас</div>
-      <div class="grid grid-cols-2 gap-y-10 sm:gap-x-24 xs:gap-x-12 gap-x-8 m-auto justify-items-center w-fit mb-20">
-        <div class="flex md:flex-row flex-col md:text-left text-center items-center gap-6">
+      <div class="grid grid-cols-2 gap-y-10 sm:gap-x-24 xs:gap-x-12 gap-x-8 m-auto justify-items-center w-fit">
+        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <img src="./assets/icons/warranty.svg" alt="">
           <div>
             <div class="font-semibold">Гарантия возврата</div>
@@ -437,7 +434,7 @@
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center items-center gap-6">
+        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <img src="./assets/icons/delivery.svg" alt="">
           <div>
             <div class="font-semibold">Гарантия возврата</div>
@@ -447,7 +444,7 @@
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center items-center gap-6">
+        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <img src="./assets/icons/materials.svg" alt="">
           <div>
             <div class="font-semibold">Гарантия возврата</div>
@@ -457,7 +454,7 @@
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center items-center gap-6">
+        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <img src="./assets/icons/sizes.svg" alt="">
           <div>
             <div class="font-semibold">Гарантия возврата</div>
@@ -472,25 +469,25 @@
 
     <!-- Footer -->
     <footer class="">
-      <div class="grid grid-cols-3 justify-items-center py-6 2xl:px-40 xs:px-10 px-5 border-y-2 bg-base-100 text-base-content border-base-300">
-        <a class="justify-self-start">
+      <div class="flex justify-between xs:flex-row flex-col gap-y-4 py-6 2xl:px-40 xs:px-10 px-5 border-y-2 bg-base-100 text-base-content border-base-300">
+        <a class="w-full flex xs:justify-start justify-center">
           <img class="h-20" src="./assets/icons/logo.svg" alt="">
         </a>
-        <div class="flex items-center gap-1">
+        <div class="w-full flex items-center justify-center gap-1">
           <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a>
           <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a>
         </div>
-        <div class="flex flex-col justify-center justify-self-end gap-3 sm:text-sm text-xs text-right">
+        <div class="w-full flex flex-col xs:items-end items-center justify-center justify-self-end gap-3 sm:text-sm text-xs text-right">
           <a class="link link-hover">+7 777 231 33 44</a>
           <a class="link link-hover" >fashion.ds@gmail.com</a>
         </div>
       </div>
-      <div class="flex items-end sm:flex-row flex-col gap-5 py-12 2xl:px-40 xs:px-10 px-5 bg-base-100 text-base-content border-base-300">
-        <div class="flex w-full items-center sm:justify-start justify-center text-xs sm:order-1 order-2">
+      <div class="flex items-end sm:flex-row flex-col gap-6 py-12 2xl:px-40 xs:px-10 px-5 bg-base-100 text-base-content border-base-300">
+        <div class="flex w-full items-center sm:justify-start justify-center text-xs xs:text-left text-center sm:order-1 order-2">
           © Все права защищены - FASHION | DSTYLE, 2024
         </div>
-        <div class="flex flex-col w-full items-center gap-3 sm:order-2">
-          <nav class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col w-full items-center sm:order-2 xs:text-base text-sm">
+          <nav class="flex flex-wrap justify-center xs:gap-4 gap-2">
             <a class="link link-hover">О нас</a>
             <a class="link link-hover">Распродажа</a>
             <a class="link link-hover">Популярное</a>
