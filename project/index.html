@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../tailwind/output.css">
   </head>
   <body data-theme="base">
+
     <!-- Header -->
     <header class="drawer py-3.5 2xl:px-40 xs:px-10 px-5">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
@@ -40,8 +41,14 @@
               <li><a href="#contacts" class="btn btn-ghost btn-navig navig-hover">Контакты</a></li>
               <li><a href="https://webk.telegram.org" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a></li>
               <li><a href="https://vk.com/feed" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a></li>
-              <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/heart.svg" alt=""></a></li>
-              <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a></li>
+              <li class="relative">
+                <a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/heart.svg" alt=""></a>
+                <div class="h-3.5 w-fit p-1 box-border rounded-full absolute z-10 right-1 bottom-1 pointer-events-none bg-accent text-xxs font-sans text-white font-bold grid place-content-center">8</div>
+              </li>
+              <li class="relative">
+                <a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a>
+                <div class="h-3.5 w-fit p-1 box-border rounded-full absolute z-10 right-1 bottom-1 pointer-events-none bg-accent text-xxs font-sans text-white font-bold grid place-content-center">3</div>
+              </li>
             </ul>
           </div>
           <div class="xl:hidden flex-none pl-3">
@@ -64,13 +71,15 @@
           <li>
             <a class="btn btn-ghost btn-navig text-xl justify-start p-4">
               <img src="./assets/icons/heart.svg" alt="">
-              <div class="text-xl block ml-3">Понравившееся</div>
+              <span class="text-xl ml-4">Понравившееся</span>
+              <span class="bg-accent rounded-lg px-2 py-0.5 text-sm text-neutral font-sans font-medium">8</span>
             </a>
           </li>
           <li>
             <a class="btn btn-ghost btn-navig text-xl justify-start p-4">
               <img src="./assets/icons/basket.svg" alt="">
-              <div class="text-xl block ml-3">Корзина</div>
+              <span class="text-xl ml-4">Корзина</span>
+              <span class="bg-accent rounded-lg px-2 py-0.5 text-sm text-neutral font-sans font-medium">3</span>
             </a>
           </li>
           <div class="divider md:hidden flex">Каталог</div>

@@ -29,6 +29,10 @@ module.exports = {
       fontSize: {
         'xxs': '10px',
       },
+      fontFamily: {
+        raleway: ['Raleway, Sans'],
+        martel: ['Martel'],
+      },
       strokeWidth: {
         '1': '1px',
         '2': '2px',
@@ -39,10 +43,6 @@ module.exports = {
         '7': '7px',
         '8': '8px',
       }
-    },
-    fontFamily: {
-      raleway: ['Raleway'],
-      martel: ['Martel'],
     },
   },
   daisyui: {
