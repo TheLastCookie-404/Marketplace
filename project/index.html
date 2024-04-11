@@ -18,16 +18,22 @@
               <img class="h-20" src="./assets/icons/logo.svg" alt="">
             </a>
           </div>
-          <div class="mx-8 md:block sm:hidden hidden">
-            <a href="#catalog" class="btn btn-ghost btn-navig navig-hover border-2 border-accent group">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-navig navig-hover border-2 border-accent group mx-8 md:flex sm:hidden hidden">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="fill-accent group-hover:fill-primary" d="M0 0h9v9H0Z M11 0h9v9H11Z M11 11h9v9H11Z M0 11h9v9H0Z" />
               </svg>
               <span class="mx-3">Каталог одежды</span>
-            </a>
+            </div>
+            <ul tabindex="0" class="dropdown-content top-12 left-8 z-50 menu p-2 shadow bg-base-100 rounded-box w-fit">
+              <li><a href="#women">Женщинам</a></li>
+              <li><a href="#men">Мужчинам</a></li>
+              <li><a href="#sale">Распродажа</a></li>
+              <li><a href="#">Популярное</a></li>
+            </ul>
           </div>
           <div class="flex-none hidden xl:block">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-1 gap-1">
               <li><a href="#about" class="btn btn-ghost btn-navig navig-hover">О нас</a></li>
               <li><a href="#sale" class="btn btn-ghost btn-navig navig-hover">Распродажа</a></li>
               <li><a href="#popular" class="btn btn-ghost btn-navig navig-hover">Популярное</a></li>
@@ -44,7 +50,9 @@
             </label>
           </div> 
         </div>
-      </div> 
+      </div>
+
+      <!-- Drawer -->
       <div class="drawer-side z-50">
         <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
         <ul class="menu xs:w-80 w-full gap-3 p-4 min-h-full bg-base-200 text-xl">
@@ -53,28 +61,23 @@
               <img src="./assets/icons/cross.svg" alt="">
             </label>
           </li>
-          <ul class="flex gap-2 md:flex-col xs:flex-row flex-col items-start">
-            <li class="md:hidden block">
-              <a class="btn btn-ghost btn-navig navig-hover border-2 border-accent group">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="fill-accent group-hover:fill-primary" d="M0 0h9v9H0Z M11 0h9v9H11Z M11 11h9v9H11Z M0 11h9v9H0Z" />
-                </svg>
-                <span class="mx-3">Каталог одежды</span>
-              </a>
-            </li>
-            <li>
-              <a class="btn btn-ghost btn-navig text-xl md:justify-start md:p-4 p-2">
-                <img src="./assets/icons/heart.svg" alt="">
-                <div class="text-xl md:block xs:hidden block ml-3">Понравившееся</div>
-              </a>
-            </li>
-            <li>
-              <a class="btn btn-ghost btn-navig text-xl md:justify-start md:p-4 p-2">
-                <img src="./assets/icons/basket.svg" alt="">
-                <div class="text-xl md:block xs:hidden block ml-3">Корзина</div>
-              </a>
-            </li>
-          </ul>
+          <li>
+            <a class="btn btn-ghost btn-navig text-xl justify-start p-4">
+              <img src="./assets/icons/heart.svg" alt="">
+              <div class="text-xl block ml-3">Понравившееся</div>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-ghost btn-navig text-xl justify-start p-4">
+              <img src="./assets/icons/basket.svg" alt="">
+              <div class="text-xl block ml-3">Корзина</div>
+            </a>
+          </li>
+          <div class="divider md:hidden flex">Каталог</div>
+          <li class="md:hidden flex"><a href="#women" class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Женщинам</a></li>
+          <li class="md:hidden flex"><a href="#men" class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Мужчинам</a></li>
+          <li class="md:hidden flex"><a href="#sale" class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Распродажа</a></li>
+          <li class="md:hidden flex"><a href="#" class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Популярное</a></li>
           <div class="divider"></div>
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">О нас</a></li>
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Распродажа</a></li>
