@@ -32,8 +32,8 @@
               <li><a href="#sale" class="btn btn-ghost btn-navig navig-hover">Распродажа</a></li>
               <li><a href="#popular" class="btn btn-ghost btn-navig navig-hover">Популярное</a></li>
               <li><a href="#contacts" class="btn btn-ghost btn-navig navig-hover">Контакты</a></li>
-              <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a></li>
-              <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a></li>
+              <li><a href="https://webk.telegram.org" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+              <li><a href="https://vk.com/feed" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a></li>
               <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/heart.svg" alt=""></a></li>
               <li><a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a></li>
             </ul>
@@ -82,8 +82,18 @@
           <li><a class="btn btn-ghost btn-navig text-xl justify-start navig-hover">Контакты</a></li>
           <div class="divider">Соц.сети</div>
           <ul class="flex justify-around">
-            <li><a class="btn btn-ghost btn-navig text-xl">Телега<img src="./assets/icons/telegram.svg" alt=""></a></li>
-            <li><a class="btn btn-ghost btn-navig text-xl">Вк<img src="./assets/icons/vk.svg" alt=""></a></li>
+            <li>
+              <a href="https://webk.telegram.org" class="btn btn-ghost btn-navig text-xl">
+                <span>Телега</span>
+                <img src="./assets/icons/telegram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com/feed" class="btn btn-ghost btn-navig text-xl">
+                <span>Вк</span>
+                <img src="./assets/icons/vk.svg" alt="">
+              </a>
+            </li>
           </ul>
         </ul>
       </div>
@@ -111,25 +121,30 @@
     <categories id="popular" class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Популярные категории</div>
       <div class="flex flex-wrap justify-evenly items-center gap-6">
-        <div class="relative">
-          <img class="brightness-90" src="./assets/images/women.png" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Женщинам</div>
-        </div>
-        <div class="relative">
-          <img class="brightness-90" src="./assets/images/men.png" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Мужчинам</div>
-        </div>
-        <div class="relative">
-          <img class="brightness-90" src="./assets/images/sale.png" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Распродажа</div>
-          <!-- w-full text-center sm:text-2xl xs:text-lg text-base text-primary absolute bottom-0 py-6 -->
-        </div>
+        <a href="#women">
+          <div class="relative">
+            <img class="brightness-90" src="./assets/images/women.png" alt="">
+            <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Женщинам</div>
+          </div>
+        </a>
+        <a href="#men">
+          <div class="relative">
+            <img class="brightness-90" src="./assets/images/men.png" alt="">
+            <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Мужчинам</div>
+          </div>
+        </a>
+        <a href="#sale">
+          <div class="relative">
+            <img class="brightness-90" src="./assets/images/sale.png" alt="">
+            <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Распродажа</div>
+          </div>
+        </a>
       </div>
     </categories>
 
     <!-- Items -->
     <items id="catalog" class="block py-12 2xl:px-40 xs:px-10 px-5">
-      <div class="text-2xl font-medium mb-10">Женщинам</div>
+      <div id="women" class="text-2xl font-medium mb-10">Женщинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
         <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
@@ -167,11 +182,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» СЕРАЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">30.000 Тг.</span>
+            <span class="line-through">42.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
@@ -188,19 +203,19 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ПЕРЛАМУТР</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">38.000 Тг.</span>
+            <span class="line-through">43.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-        </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
+          </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image4.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-20%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,16 +224,16 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» БЕЖЕВАЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">38.000 Тг.</span>
+            <span class="line-through">48.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
       </div>
-      <div class="text-2xl font-medium mb-10">Мужчинам</div>
+      <div id="men" class="text-2xl font-medium mb-10">Мужчинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
         <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
@@ -234,11 +249,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАРКА ЗИМНЯЯ МУЖСКАЯ «АДМИРАЛТЕЙСТВО» ЧЁРНАЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
             <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="line-through">38.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
@@ -247,7 +262,7 @@
             <img class="w-full" src="./assets/images/items/image6.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-20%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,14 +271,15 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">КУРТКА КОРОТКАЯ МУЖСКАЯ «ВЕРФЬ» БЕЖЕВАЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">26.000 Тг.</span>
+            <span class="line-through">33.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-        </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
+        </div>
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image7.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -277,19 +293,20 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ВЕТРОВКА МУЖСКАЯ ЧЁРНАЯ "УРАГАН ЗАСТЁЖКА"</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">12.000 Тг.</span>
+            <span class="line-through">15.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-        </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
+        </div>  
+        <div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
           <div class="w-full relative">
             <img class="w-full" src="./assets/images/items/image8.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-30%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,11 +315,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПЛАЩ МУЖСКОЙ СИНИЙ "BLUE GARMONY"</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">17.000 Тг.</span>
+            <span class="line-through">25.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
@@ -314,7 +331,7 @@
             <img class="w-full" src="./assets/images/items/image9.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-30%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -323,11 +340,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» МЯТНОЕ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">17.000 Тг.</span>
+            <span class="line-through">25.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
@@ -336,7 +353,7 @@
             <img class="w-full" src="./assets/images/items/image10.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-30%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,11 +362,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ОРХИДЕЯ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">14.000 Тг.</span>
+            <span class="line-through">20.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div><div class="max-w-72 flex flex-col gap-3 text-sm mb-10">
@@ -357,7 +374,7 @@
             <img class="w-full" src="./assets/images/items/image11.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-30%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,11 +383,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ЧЁРНОЕ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">19.600 Тг.</span>
+            <span class="line-through">28.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
@@ -379,7 +396,7 @@
             <img class="w-full" src="./assets/images/items/image12.jpg" alt="">
             <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
               <div class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                <span>new</span>
+                <span>-30%</span>
               </div>
               <div class="h-11 aspect-square grid place-content-center p-2.5 rounded-full bg-primary group">
                 <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,11 +405,11 @@
               </div>
             </div>
           </div>
-          <div class="uppercase">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="uppercase">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ ПЫЛЬНО-ГОЛУБОЕ</div>
           <div class="text-xs">Коллекция 2023-2024</div>
           <div class="flex gap-2 text-base">
-            <span class="text-secondary">31.000 Тг.</span>
-            <span class="line-through">31.000 Тг.</span>
+            <span class="text-secondary">15.400 Тг.</span>
+            <span class="line-through">22.000 Тг.</span>
           </div>
           <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
@@ -474,8 +491,8 @@
           <img class="h-20" src="./assets/icons/logo.svg" alt="">
         </a>
         <div class="w-full flex items-center justify-center gap-1">
-          <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a>
-          <a class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a>
+          <a href="https://webk.telegram.org" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/telegram.svg" alt=""></a>
+          <a href="https://vk.com/feed" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/vk.svg" alt=""></a>
         </div>
         <div class="w-full flex flex-col xs:items-end items-center justify-center justify-self-end gap-3 sm:text-sm text-xs text-right">
           <a class="link link-hover">+7 777 231 33 44</a>

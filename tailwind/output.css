@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -3112,8 +3112,8 @@ html:has(.drawer-toggle:checked) {
   height: 5rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-fit {
@@ -3125,26 +3125,6 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
 .min-h-6 {
   min-height: 1.5rem;
 }
@@ -3153,21 +3133,12 @@ html:has(.drawer-toggle:checked) {
   min-height: 100%;
 }
 
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.min-h-0 {
-  min-height: 0px;
-}
-
 .w-2\/3 {
   width: 66.666667%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-fit {
@@ -3177,26 +3148,6 @@ html:has(.drawer-toggle:checked) {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .max-w-72 {
@@ -3402,26 +3353,6 @@ html:has(.drawer-toggle:checked) {
   stroke: var(--fallback-a,oklch(var(--a)/1));
 }
 
-.stroke-4 {
-  stroke-width: 4px;
-}
-
-.stroke-3 {
-  stroke-width: 3px;
-}
-
-.stroke-5 {
-  stroke-width: 5px;
-}
-
-.stroke-7 {
-  stroke-width: 7px;
-}
-
-.stroke-8 {
-  stroke-width: 8px;
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3607,16 +3538,16 @@ html:has(.drawer-toggle:checked) {
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
 
+.group:hover .group-hover\:fill-neutral {
+  fill: var(--fallback-n,oklch(var(--n)/1));
+}
+
 .group:hover .group-hover\:fill-primary {
   fill: var(--fallback-p,oklch(var(--p)/1));
 }
 
 .group:hover .group-hover\:fill-secondary {
   fill: var(--fallback-s,oklch(var(--s)/1));
-}
-
-.group:hover .group-hover\:fill-neutral {
-  fill: var(--fallback-n,oklch(var(--n)/1));
 }
 
 .group:hover .group-hover\:stroke-neutral {
@@ -3698,11 +3629,6 @@ html:has(.drawer-toggle:checked) {
     line-height: 1.5rem;
   }
 
-  .xs\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .xs\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -3749,11 +3675,6 @@ html:has(.drawer-toggle:checked) {
   .sm\:gap-x-24 {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .sm\:text-5xl {
