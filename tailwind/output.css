@@ -3230,14 +3230,6 @@ html:has(.drawer-toggle:checked) {
   top: 3rem;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -3254,20 +3246,8 @@ html:has(.drawer-toggle:checked) {
   order: 2;
 }
 
-.float-start {
-  float: inline-start;
-}
-
-.float-end {
-  float: inline-end;
-}
-
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
+.order-3 {
+  order: 3;
 }
 
 .m-auto {
@@ -3304,36 +3284,12 @@ html:has(.drawer-toggle:checked) {
   margin-top: 1.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -3376,6 +3332,10 @@ html:has(.drawer-toggle:checked) {
   height: 1.25rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -3385,20 +3345,12 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-\[100\%\] {
+  height: 100%;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-9 {
-  height: 2.25rem;
+.h-8 {
+  height: 2rem;
 }
 
 .min-h-6 {
@@ -3417,6 +3369,10 @@ html:has(.drawer-toggle:checked) {
   width: 1.25rem;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -3426,20 +3382,8 @@ html:has(.drawer-toggle:checked) {
   width: 100%;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-9 {
-  width: 2.25rem;
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-72 {
@@ -3456,15 +3400,6 @@ html:has(.drawer-toggle:checked) {
 
 .flex-none {
   flex: none;
-}
-
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -3549,10 +3484,6 @@ html:has(.drawer-toggle:checked) {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-x-6 {
@@ -3827,10 +3758,6 @@ html:has(.drawer-toggle:checked) {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .uppercase {
