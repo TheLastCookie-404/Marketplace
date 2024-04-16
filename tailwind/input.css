@@ -30,4 +30,8 @@
     .navig-hover{
         @apply hover:bg-accent hover:text-primary;
     }
+
+    .header-overflow{
+        @apply md:overflow-visible overflow-hidden
+    }
 }
