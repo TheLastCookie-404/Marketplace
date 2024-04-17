@@ -92,7 +92,7 @@ module.exports = {
           "warning": "#fcd34d",
           "error": "#ff6382",
 
-          "--rounded-btn": "0.8rem"
+          "--rounded-btn": "0.8rem",
         },
 
         red: {
@@ -107,7 +107,7 @@ module.exports = {
           "warning": "#fcd34d",
           "error": "#ff6382",
 
-          "--rounded-btn": "0rem"
+          "--rounded-btn": "0rem",
         },
       },
     ],
