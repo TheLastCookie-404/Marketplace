@@ -3363,6 +3363,10 @@ html:has(.drawer-toggle:checked) {
   width: 1.25rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -3370,18 +3374,6 @@ html:has(.drawer-toggle:checked) {
 
 .w-full {
   width: 100%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-72 {
-  width: 18rem;
 }
 
 .max-w-20 {
@@ -3430,10 +3422,6 @@ html:has(.drawer-toggle:checked) {
 
 .place-content-center {
   place-content: center;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -3490,10 +3478,6 @@ html:has(.drawer-toggle:checked) {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-x-6 {
@@ -3865,10 +3849,6 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 450px) {
-  .xs\:flex {
-    display: flex;
-  }
-
   .xs\:w-80 {
     width: 20rem;
   }
