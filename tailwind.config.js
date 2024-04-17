@@ -30,7 +30,7 @@ module.exports = {
         'xxs': '10px',
       },
       fontFamily: {
-        raleway: ['Raleway, Sans'],
+        raleway: ['Raleway'],
         martel: ['Martel'],
       },
       strokeWidth: {
@@ -91,6 +91,8 @@ module.exports = {
           "success": "#00e8aa",
           "warning": "#fcd34d",
           "error": "#ff6382",
+
+          "--rounded-btn": "0.8rem"
         },
 
         red: {
@@ -104,6 +106,8 @@ module.exports = {
           "success": "#00e8aa",
           "warning": "#fcd34d",
           "error": "#ff6382",
+
+          "--rounded-btn": "0rem"
         },
       },
     ],
