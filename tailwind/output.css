@@ -3226,10 +3226,6 @@ html:has(.drawer-toggle:checked) {
   pointer-events: none;
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -3326,10 +3322,6 @@ html:has(.drawer-toggle:checked) {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .box-border {
