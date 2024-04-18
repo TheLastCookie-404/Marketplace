@@ -40,19 +40,16 @@
     }
 
     .swiper {
-        @apply w-full h-full;
+        @apply w-full h-fit;
     }
 
     .swiper-slide {
-        @apply text-center text-lg flex justify-center items-center
+        @apply !flex text-lg justify-center items-center;
     }
 
-    /* .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
+    .swiper-pagination .swiper-pagination-bullet-active {
+        @apply bg-base-content;
+    }
 
     [data-theme="red"] .btn-navig{
         @apply content-center font-normal min-h-6 h-10 rounded-2xl;
