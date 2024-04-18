@@ -2938,6 +2938,12 @@ body{
   margin-top: 0;
 }
 
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 .mockup-browser .mockup-browser-toolbar .input {
   position: relative;
   margin-left: auto;
@@ -3199,6 +3205,27 @@ html:has(.drawer-toggle:checked) {
   }
 }
 
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+
 [data-theme="red"] .btn-navig {
   height: 2.5rem;
   min-height: 1.5rem;
@@ -3358,10 +3385,6 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .min-h-6 {
   min-height: 1.5rem;
 }
@@ -3389,10 +3412,6 @@ html:has(.drawer-toggle:checked) {
 
 .w-full {
   width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .max-w-20 {
@@ -3502,11 +3521,6 @@ html:has(.drawer-toggle:checked) {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
 }
 
 .gap-y-10 {
@@ -3908,9 +3922,9 @@ html:has(.drawer-toggle:checked) {
     gap: 1.5rem;
   }
 
-  .xs\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+  .xs\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .xs\:px-10 {
@@ -3990,9 +4004,9 @@ html:has(.drawer-toggle:checked) {
     gap: 1.75rem;
   }
 
-  .sm\:gap-x-24 {
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
+  .sm\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
   }
 
   .sm\:text-5xl {

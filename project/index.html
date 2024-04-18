@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
     <link rel="stylesheet" href="../tailwind/output.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../swiper/styles/swiper.css" />
   </head>
   <body data-theme="red">
   <!-- or (data-theme="base") to change theme back -->
@@ -454,26 +454,23 @@
 
     <!-- Hot -->
     <hot class="dev block py-12 2xl:px-40 xs:px-10 px-5">
-      <section class="lol slider">
-        <div>
-          <img src="http://placehold.it/350x300?text=1">
+      <div class="text-2xl font-medium mb-10">Горящие товары</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
         </div>
-        <div>
-          <img src="http://placehold.it/350x300?text=2">
-        </div>
-        <div>
-          <img src="http://placehold.it/350x300?text=3">
-        </div>
-        <div>
-          <img src="http://placehold.it/350x300?text=4">
-        </div>
-        <div>
-          <img src="http://placehold.it/350x300?text=5">
-        </div>
-        <div>
-          <img src="http://placehold.it/350x300?text=6">
-        </div>
-      </section>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </hot>
 
     <!-- AboutUs -->
@@ -500,22 +497,22 @@
     <!-- Info -->
     <info id="info" class="block py-12 2xl:px-40 xs:px-10 px-5">
       <div class="text-2xl font-medium mb-10">Удобство для вас</div>
-      <div class="grid grid-cols-2 gap-y-10 sm:gap-x-24 xs:gap-x-12 gap-x-8 m-auto justify-items-center w-fit">
-        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
+      <div class="grid grid-cols-2 sm:gap-x-20 xs:gap-x-8 gap-x-6 gap-y-10 m-auto justify-items-center w-fit">
+        <div class="w-full flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <svg class="max-w-20" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="fill-accent" cx="42" cy="42" r="42"/>
             <path d="M22.1887 25.8491L41.1887 15.8491L60.1887 25.8491V47.8491C60.1887 54.8491 47.522 64.5158 41.1887 67.8491C35.1887 64.8491 22.1887 54.8491 22.1887 47.8491V25.8491Z" stroke="white" stroke-width="4"/>
             <path d="M34.1887 41.8489L39.1887 46.8489L50.1887 37.8489" stroke="white" stroke-width="4"/>
           </svg>
           <div>
-            <div class="font-semibold">Гарантия возврата</div>
+            <div class="font-semibold mb-2">Гарантия возврата</div>
             <div class="max-w-96">
               Если нужно обменять или вернуть товар по 
               заказу. Сообщите нам со страницы контактов
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
+        <div class="w-full flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <svg class="max-w-20" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="fill-accent" cx="42" cy="42" r="42"/>
             <path d="M37.0714 60.8929L55.9643 47.75V30.5M37.0714 60.8929L19 50.2143V30.5M37.0714 60.8929V41.1786M55.9643 30.5L37.0714 19L28.0357 24.75M55.9643 30.5L45.2857 36.25M19 30.5L37.0714 41.1786M19 30.5L28.0357 24.75M37.0714 41.1786L45.2857 36.25M28.0357 24.75L45.2857 36.25" stroke="white" stroke-width="3"/>
@@ -523,28 +520,29 @@
             <path d="M47.0779 53.7984L52.6785 58.2789L59.3993 49.3179" stroke="white" stroke-width="3"/>
           </svg>
           <div>
-            <div class="font-semibold">Гарантия возврата</div>
+            <div class="font-semibold mb-2">Доставка по всему Казахстану</div>
             <div class="max-w-96">
-              Если нужно обменять или вернуть товар по 
-              заказу. Сообщите нам со страницы контактов
+              Из Астаны в Алмату менее чем за сутки. 
+              Доставка по Алмате от 25 минут,
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
+        <div class="w-full flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <svg class="max-w-20" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="fill-accent" cx="42" cy="42" r="42"/>
             <rect x="22.5" y="22.5" width="30.6" height="30.6" stroke="white" stroke-width="3"/>
             <rect x="30.9" y="30.8999" width="30.6" height="30.6" stroke="white" stroke-width="3"/>
           </svg>            
           <div>
-            <div class="font-semibold">Гарантия возврата</div>
+            <div class="font-semibold mb-2">Качественные материалы</div>
             <div class="max-w-96">
-              Если нужно обменять или вернуть товар по 
-              заказу. Сообщите нам со страницы контактов
+              Используем инновационные ткани, проверенную 
+              фурнитуру и премиальный утеплитель. 
+
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
+        <div class="w-full flex md:flex-row flex-col md:text-left text-center xs:text-base text-xs items-center gap-6">
           <svg class="max-w-20" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="fill-accent" cx="42" cy="42" r="42"/>
             <path d="M40.9993 21.8823C44.2522 21.8823 46.7155 21.2234 47.9281 20.8148C47.1693 24.6431 44.1953 27.3298 40.9993 27.3298C37.8166 27.3298 34.8407 24.6399 34.0733 20.818C34.4306 20.9383 34.8984 21.0807 35.4645 21.2216C36.8043 21.5551 38.7045 21.8823 40.9993 21.8823Z" stroke="white" stroke-width="3"/>
@@ -553,10 +551,9 @@
             <path d="M18.6464 68.6464C18.4512 68.8417 18.4512 69.1583 18.6464 69.3536L21.8284 72.5355C22.0237 72.7308 22.3403 72.7308 22.5355 72.5355C22.7308 72.3403 22.7308 72.0237 22.5355 71.8284L19.7071 69L22.5355 66.1716C22.7308 65.9763 22.7308 65.6597 22.5355 65.4645C22.3403 65.2692 22.0237 65.2692 21.8284 65.4645L18.6464 68.6464ZM41 68.5L19 68.5L19 69.5L41 69.5L41 68.5Z" fill="white"/>
           </svg>
           <div>
-            <div class="font-semibold">Гарантия возврата</div>
+            <div class="font-semibold mb-2">Точное соответствие с размерами</div>
             <div class="max-w-96">
-              Если нужно обменять или вернуть товар по 
-              заказу. Сообщите нам со страницы контактов
+              У нас есть модели на все типы фигур.
             </div>
           </div>
         </div>
@@ -612,9 +609,8 @@
         </g>
       </svg>
     </button> -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./assets/scripts/slider.config.js"></script>
+
+    <script src="../swiper/swiper.js"></script>
+    <script src="../swiper/swiper.config.js"></script>
   </body>
 </html>
