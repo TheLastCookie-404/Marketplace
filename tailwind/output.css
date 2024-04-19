@@ -3226,6 +3226,14 @@ html:has(.drawer-toggle:checked) {
   pointer-events: none;
 }
 
+.static {
+  position: static;
+}
+
+.\!static {
+  position: static !important;
+}
+
 .fixed {
   position: fixed;
 }
@@ -3268,6 +3276,14 @@ html:has(.drawer-toggle:checked) {
 
 .top-12 {
   top: 3rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-20 {
+  top: 5rem;
 }
 
 .z-10 {
@@ -3322,6 +3338,22 @@ html:has(.drawer-toggle:checked) {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -3523,6 +3555,10 @@ html:has(.drawer-toggle:checked) {
   row-gap: 1rem;
 }
 
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -3626,6 +3662,10 @@ html:has(.drawer-toggle:checked) {
 
 .stroke-accent {
   stroke: var(--fallback-a,oklch(var(--a)/1));
+}
+
+.stroke-base-content {
+  stroke: var(--fallback-bc,oklch(var(--bc)/1));
 }
 
 .object-contain {
@@ -3770,6 +3810,11 @@ html:has(.drawer-toggle:checked) {
   font-size: 10px;
 }
 
+.\!text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3848,6 +3893,11 @@ html:has(.drawer-toggle:checked) {
 
 .brightness-90 {
   --tw-brightness: brightness(.9);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

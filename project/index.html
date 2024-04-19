@@ -138,7 +138,7 @@
   </header>
 
   <!-- Banner -->
-  <banner class="flex justify-center bg-neutral py-12 2xl:px-40 xs:px-10 px-5">
+  <banner class="flex justify-center bg-neutral py-12 2xl:px-40 xs:px-10 px-5 mb-10">
     <div class="flex lg:flex-row flex-col-reverse items-center justify-center xl:gap-32 lg:gap-20 md:gap-y-14 gap-10">
       <div class="xl:w-1/3 w-full flex flex-col sm:gap-7 gap-3">
         <div class="xs:text-6xl text-4xl uppercase">
@@ -150,8 +150,7 @@
           Мы предлагаем широкий ассортимент модной одежды для <span class="text-accent-content">мужчин и женщин.</span>
           Наш магазин отличается <span class="text-accent-content">высоким качеством товаров и доступными ценами.</span>
         </div>
-        <a href="#catalog"
-          class="btn bg-accent-content hover:bg-accent border-none text-primary text-2xl font-normal w-fit min-h-6 h-12 px-8 rounded-3xl uppercase">Перейти</a>
+        <a href="#catalog" class="btn bg-accent-content hover:bg-accent border-none text-primary text-2xl font-normal w-fit min-h-6 h-12 px-8 rounded-3xl uppercase">Перейти</a>
       </div>
       <img class="lg:w-1/3 sm:w-2/3 w-full object-contain" src="./assets/images/banner_image1.png" alt="">
     </div>
@@ -164,372 +163,378 @@
       <a href="#women">
         <div class="relative">
           <img class="brightness-90 w-80" src="./assets/images/women.jpg" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Женщинам</div>
+          <div class="w-full text-center text-2xl text-base-content font-semibold invert absolute bottom-0 py-6">Женщинам</div>
         </div>
       </a>
       <a href="#men">
         <div class="relative">
           <img class="brightness-90 w-80" src="./assets/images/men.jpg" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Мужчинам</div>
+          <div class="w-full text-center text-2xl text-base-content font-semibold invert absolute bottom-0 py-6">Мужчинам</div>
         </div>
       </a>
       <a href="#sale">
         <div class="relative">
           <img class="brightness-90 w-80" src="./assets/images/sale.jpg" alt="">
-          <div class="w-full text-center text-2xl text-primary absolute bottom-0 py-6">Распродажа</div>
+          <div class="w-full text-center text-2xl text-base-content font-semibold invert absolute bottom-0 py-6">Распродажа</div>
         </div>
       </a>
     </div>
   </categories>
 
   <!-- Items -->
-  <items id="catalog" class="block py-12 2xl:px-40 xs:px-10 px-5">
-    <div id="women" class="text-2xl font-medium mb-10">Женщинам</div>
-    <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
+  <items id="catalog">
+    <div class="2xl:px-40 xs:px-10 px-5 py-12">
+      <div id="women" class="text-2xl font-medium mb-10">Женщинам</div>
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>new</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>new</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">31.000 Тг.</span>
+            <span class="line-through">31.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ФУКСИЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">31.000 Тг.</span>
-          <span class="line-through">31.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image2.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>new</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image2.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>new</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» СЕРАЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">30.000 Тг.</span>
+            <span class="line-through">42.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» СЕРАЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">30.000 Тг.</span>
-          <span class="line-through">42.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image3.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>new</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image3.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>new</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ПЕРЛАМУТР</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">38.000 Тг.</span>
+            <span class="line-through">43.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ ЖЕНСКАЯ «МАРИИНКА» ПЕРЛАМУТР</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">38.000 Тг.</span>
-          <span class="line-through">43.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image4.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-20%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image4.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-20%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» БЕЖЕВАЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">38.000 Тг.</span>
-          <span class="line-through">48.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
-
-    </div>
-    <div id="men" class="text-2xl font-medium mb-10">Мужчинам</div>
-    <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
-
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image5.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>new</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
+          <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ ЗИМНЯЯ ЖЕНСКАЯ «ФАНТАНКА» БЕЖЕВАЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">38.000 Тг.</span>
+            <span class="line-through">48.000 Тг.</span>
           </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ МУЖСКАЯ «АДМИРАЛТЕЙСТВО» ЧЁРНАЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">31.000 Тг.</span>
-          <span class="line-through">38.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image6.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-20%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ МУЖСКАЯ «ВЕРФЬ» БЕЖЕВАЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">26.000 Тг.</span>
-          <span class="line-through">33.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
-
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image7.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>new</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ВЕТРОВКА МУЖСКАЯ ЧЁРНАЯ "УРАГАН ЗАСТЁЖКА"</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">12.000 Тг.</span>
-          <span class="line-through">15.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
-
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image8.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-30%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПЛАЩ МУЖСКОЙ СИНИЙ "BLUE GARMONY"</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">17.000 Тг.</span>
-          <span class="line-through">25.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
       </div>
     </div>
-    <div id="sale" class="text-2xl font-medium mb-10">Распродажа</div>
-    <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 justify-items-center mb-10">
+    <div class="2xl:px-40 xs:px-10 px-5 py-12">
+      <div id="men" class="text-2xl font-medium mb-10">Мужчинам</div>
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image9.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-30%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image5.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>new</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАРКА ЗИМНЯЯ МУЖСКАЯ «АДМИРАЛТЕЙСТВО» ЧЁРНАЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">31.000 Тг.</span>
+            <span class="line-through">38.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» МЯТНОЕ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">17.000 Тг.</span>
-          <span class="line-through">25.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image10.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-30%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image6.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-20%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">КУРТКА КОРОТКАЯ МУЖСКАЯ «ВЕРФЬ» БЕЖЕВАЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">26.000 Тг.</span>
+            <span class="line-through">33.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ОРХИДЕЯ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">14.000 Тг.</span>
-          <span class="line-through">20.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image11.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-30%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image7.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>new</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ВЕТРОВКА МУЖСКАЯ ЧЁРНАЯ "УРАГАН ЗАСТЁЖКА"</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">12.000 Тг.</span>
+            <span class="line-through">15.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ЧЁРНОЕ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">19.600 Тг.</span>
-          <span class="line-through">28.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-      </div>
 
-      <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
-        <div class="w-full relative">
-          <img class="w-full" src="./assets/images/items/image12.jpg" alt="">
-          <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-            <div
-              class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-              <span>-30%</span>
-            </div>
-            <div
-              class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-              <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="group-hover:stroke-secondary"
-                  d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                  stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image8.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-30%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПЛАЩ МУЖСКОЙ СИНИЙ "BLUE GARMONY"</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">17.000 Тг.</span>
+            <span class="line-through">25.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
         </div>
-        <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ ПЫЛЬНО-ГОЛУБОЕ</div>
-        <div class="text-xs">Коллекция 2023-2024</div>
-        <div class="flex gap-2 text-base">
-          <span class="text-secondary">15.400 Тг.</span>
-          <span class="line-through">22.000 Тг.</span>
-        </div>
-        <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
       </div>
+    </div>
+    <div class="2xl:px-40 xs:px-10 px-5 py-12">
+      <div id="sale" class="text-2xl font-medium mb-10">Распродажа</div>
+      <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
 
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image9.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-30%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» МЯТНОЕ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">17.000 Тг.</span>
+            <span class="line-through">25.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
+        </div>
+
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image10.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-30%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ОРХИДЕЯ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">14.000 Тг.</span>
+            <span class="line-through">20.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
+        </div>
+
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image11.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-30%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ЧЁРНОЕ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">19.600 Тг.</span>
+            <span class="line-through">28.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
+        </div>
+
+        <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
+          <div class="w-full relative">
+            <img class="w-full" src="./assets/images/items/image12.jpg" alt="">
+            <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
+              <div
+                class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
+                <span>-30%</span>
+              </div>
+              <div
+                class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
+                <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-secondary"
+                    d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
+                    stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="uppercase text-ellipsis overflow-hidden">ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ ПЫЛЬНО-ГОЛУБОЕ</div>
+          <div class="text-xs">Коллекция 2023-2024</div>
+          <div class="flex gap-2 text-base">
+            <span class="text-secondary">15.400 Тг.</span>
+            <span class="line-through">22.000 Тг.</span>
+          </div>
+          <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
+        </div>
+
+      </div>
     </div>
   </items>
 
@@ -539,19 +544,23 @@
     <div class="flex gap-6">
       <div class="btn-prev order-1 flex items-center">
         <button class="btn btn-circle p-2">
-          <img src="./assets/icons/arrow-left.svg" alt="">
+          <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-base-content" d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
       </div>
       <div class="btn-next order-3 flex items-center">
         <button class="btn btn-circle p-2">
-          <img src="./assets/icons/arrow-right.svg" alt="">
+          <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-base-content" d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
       </div>
       <div class="swiper mySwiper order-2">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper mb-20">
 
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -581,7 +590,7 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -611,7 +620,7 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -641,7 +650,7 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -671,7 +680,7 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
@@ -701,7 +710,7 @@
           </div>
           
           <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm mb-10 justify-between">
+            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
               <div class="w-full relative">
                 <img class="w-full" src="./assets/images/items/image1.jpg" alt="">
                 <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
