@@ -3348,6 +3348,10 @@ html:has(.drawer-toggle:checked) {
   display: none;
 }
 
+.aspect-9\/12 {
+  aspect-ratio: 9 / 12;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -3645,6 +3649,11 @@ html:has(.drawer-toggle:checked) {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -3899,22 +3908,6 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 450px) {
-  .xs\:block {
-    display: block;
-  }
-
-  .xs\:\!block {
-    display: block !important;
-  }
-
-  .xs\:\!flex {
-    display: flex !important;
-  }
-
-  .xs\:flex {
-    display: flex;
-  }
-
   .xs\:inline-flex {
     display: inline-flex;
   }

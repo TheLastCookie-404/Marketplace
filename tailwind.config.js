@@ -26,6 +26,9 @@ module.exports = {
         'fill': 'repeat(auto-fill, minmax(0, 10fr))',
         'fit': 'repeat(auto-fit, minmax(0, 1fr))',
       },
+      aspectRatio: {
+        '9/12': '9 / 12',
+      },
       fontSize: {
         'xxs': '10px',
       },

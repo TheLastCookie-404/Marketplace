@@ -54,5 +54,4 @@
     [data-theme="red"] .btn-navig{
         @apply content-center font-normal min-h-6 h-10 rounded-2xl;
     }
-
 }
