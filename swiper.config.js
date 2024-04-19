@@ -18,7 +18,7 @@
 // });
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 24,
   navigation: {
     nextEl: ".btn-next",
@@ -28,4 +28,19 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+
+    // when window width is >= 450px / xs
+    450: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px / sm
+    640: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px / md
+    768: {
+      slidesPerView: 3,
+    }
+  }
 });
