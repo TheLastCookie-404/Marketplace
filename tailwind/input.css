@@ -44,7 +44,7 @@
     }
 
     .swiper-slide {
-        @apply !flex text-lg justify-center items-center;
+        @apply !flex !h-auto text-lg justify-center items-stretch;
     }
 
     .swiper-pagination .swiper-pagination-bullet-active {

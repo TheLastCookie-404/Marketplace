@@ -3203,7 +3203,8 @@ html:has(.drawer-toggle:checked) {
 
 .swiper-slide {
   display: flex !important;
-  align-items: center;
+  height: auto !important;
+  align-items: stretch;
   justify-content: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
