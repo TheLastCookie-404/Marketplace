@@ -23,10 +23,6 @@
         outline: 1px solid red;
     }
 
-    .overflow-anchor{
-        overflow-anchor: none;
-    }
-
     .btn-navig{
         @apply content-center font-normal min-h-6 h-10;
     }

@@ -111,6 +111,7 @@ module.exports = {
           "error": "#ff6382",
 
           "--rounded-btn": "0rem",
+          "--rounded-box": "0rem",
         },
       },
     ],
