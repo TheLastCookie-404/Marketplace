@@ -1004,10 +1004,36 @@
       <div class="modal-box">
         <h3 class="font-medium text-xl">Ваш заказ</h3>
         <div class="divider"></div>
+        <div class="dev h-fit grid grid-cols-2">
+          <div class="dev">asd</div>
+          <div class="dev">asd</div>
+        </div>
         <div class="divider"></div>
-        <div class="text-right font-medium mb-6">Сумма: 35.000 Тг.</div>
+        <div class="text-right font-medium mb-1.5">Сумма: 35.000 Тг.</div>
         <form method="dialog w-full">
           <!-- if there is a button in form, it will close the modal -->
+          <div class="font-medium mb-1.5">Данные</div>
+          <div class="grid gap-2 mb-4">
+            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+          </div>
+          <div class="font-medium mb-1.5">Доставка</div>
+          <div class="grid gap-1.5 mb-4">
+            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+          </div>
+          <div class="font-medium mb-2">Способ оплаты</div>
+          <div class="grid gap-1.5">
+            <div class="flex items-center">
+              <input type="radio" name="radio-1" class="radio mr-2.5" />
+              <span>Кредитной картой (Visa, Mastercard)</span>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="radio-1" class="radio mr-2.5" />
+              <span>Кредитной картой (Kaspi)</span>
+            </div>
+          </div>
+          <div class="text-right font-medium my-6">Итоговая сумма: 35.000 Тг.</div>
           <button class="btn w-full">Купить</button>
         </form>
         <div class="text-center text-sm mt-4">
