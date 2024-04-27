@@ -3437,10 +3437,6 @@ html:has(.drawer-toggle:checked) {
   border-bottom-left-radius: 0px;
 }
 
-.dev{
-  outline: 1px solid red;
-}
-
 .btn-navig {
   height: 2.5rem;
   min-height: 1.5rem;
@@ -3580,11 +3576,6 @@ html:has(.drawer-toggle:checked) {
   margin-bottom: 1.5rem;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -3686,12 +3677,12 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .max-h-14 {
   max-height: 3.5rem;
+}
+
+.min-h-5 {
+  min-height: 1.25rem;
 }
 
 .min-h-6 {
@@ -3700,10 +3691,6 @@ html:has(.drawer-toggle:checked) {
 
 .min-h-full {
   min-height: 100%;
-}
-
-.min-h-5 {
-  min-height: 1.25rem;
 }
 
 .w-2\/3 {
@@ -3729,14 +3716,6 @@ html:has(.drawer-toggle:checked) {
 
 .w-full {
   width: 100%;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-20 {
@@ -3793,10 +3772,6 @@ html:has(.drawer-toggle:checked) {
 
 .place-content-center {
   place-content: center;
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-center {
@@ -4134,11 +4109,6 @@ html:has(.drawer-toggle:checked) {
 
 .text-xxs {
   font-size: 10px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
