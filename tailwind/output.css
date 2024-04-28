@@ -3677,6 +3677,18 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-14 {
   max-height: 3.5rem;
 }
@@ -3716,6 +3728,18 @@ html:has(.drawer-toggle:checked) {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-20 {
@@ -4229,6 +4253,11 @@ html:has(.drawer-toggle:checked) {
 
 .group:hover .group-hover\:stroke-secondary {
   stroke: var(--fallback-s,oklch(var(--s)/1));
+}
+
+.group:hover .group-hover\:invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 450px) {
