@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 29 2024 г., 00:48
+-- Время создания: Апр 29 2024 г., 15:14
 -- Версия сервера: 5.7.39
 -- Версия PHP: 7.2.34
 
@@ -53,7 +53,11 @@ INSERT INTO `items` (`id`, `picture`, `cornermsg`, `name`, `price`, `discount`, 
 (9, 'image9.jpg', '-30%', 'ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» МЯТНОЕ', 25000, 30, 'sale'),
 (10, 'image10.jpg', '-30%', 'ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ОРХИДЕЯ', 20000, 30, 'sale'),
 (11, 'image12.jpg', '-30%', 'ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ ПЫЛЬНО-ГОЛУБОЕ', 25000, 30, 'sale'),
-(12, 'image11.jpg', '-30%', 'ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ЧЁРНОЕ', 28000, 30, 'sale');
+(12, 'image11.jpg', '-30%', 'ПАЛЬТО ТЁПЛОЕ ЖЕНСКОЕ «ЭРМИТАЖ» ЧЁРНОЕ', 28000, 30, 'sale'),
+(13, 'image13.jpg', 'new', 'ВЕТРОВКА ANTEATER WINDJACKET-96', 42000, 10, 'hot'),
+(14, 'image14.jpg', 'new', 'КУРТКА ANTEATER WGARAGE-BAGE', 48000, 19, 'hot'),
+(15, 'image15.jpg', 'new', 'ХУДИ ANTEATER HOODIE-BLACK-ANTEATER', 31, 10, 'hot'),
+(16, 'image16.jpg', 'new', 'БОМБЕР \"ЭКО ЧУДО ОГОНЁК\" ГОЛУБОЙ', 55000, 10, 'hot');
 
 --
 -- Индексы сохранённых таблиц
@@ -73,7 +77,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT для таблицы `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28003;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

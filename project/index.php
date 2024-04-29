@@ -197,19 +197,31 @@
     <div class="2xl:px-40 xs:px-10 px-5 py-12">
       <div id="women" class="text-2xl font-medium mb-10">Женщинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
-        <? DrawItemsFromDB($table, 'women'); ?>
+        <? 
+          foreach($table as $items){
+            if($items[6] == 'women') DrawItemsFromDB($items);
+          } 
+        ?>
       </div>
     </div>
     <div class="2xl:px-40 xs:px-10 px-5 py-12">
       <div id="men" class="text-2xl font-medium mb-10">Мужчинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
-        <? DrawItemsFromDB($table, 'men'); ?>
+        <? 
+          foreach($table as $items){
+            if($items[6] == 'men') DrawItemsFromDB($items);
+          } 
+        ?>
       </div>
     </div>
     <div class="2xl:px-40 xs:px-10 px-5 py-12">
       <div id="sale" class="text-2xl font-medium mb-10">Распродажа</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
-        <? DrawItemsFromDB($table, 'sale'); ?>
+        <? 
+          foreach($table as $items){
+            if($items[6] == 'sale') DrawItemsFromDB($items);
+          } 
+        ?>
       </div>
     </div>
   </items>
@@ -236,277 +248,13 @@
       </div>
       <div class="swiper mySwiper order-2">
         <div class="swiper-wrapper mb-20 ">
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image13.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
+          <? foreach($table as $items){ ?>
+            <? if($items[6] == 'hot'){ ?>
+              <div class="swiper-slide">
+                <? DrawItemsFromDB($items); ?>
               </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ЛОНГСЛИВ ВОЛЧОК «WOLVES DEMONS»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">28.000 Тг.</span>
-                <span class="line-through">42.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image14.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ДЖИНСОВЫЙ СЕТ «JEANS CHANNING»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">50.000 Тг.</span>
-                <span class="line-through">66.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image15.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">БОМБЕР «ЭКО ЧУДО ОГОНЁК» БОРДОВЫЙ</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">44.000 Тг.</span>
-                <span class="line-through">55.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image16.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ВЕТРОВКА «ANTEATER WINDJACKET-96»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">32.000 Тг.</span>
-                <span class="line-through">42.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image17.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">КУРТКА «ANTEATER WGARAGE-BAGE»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">43.000 Тг.</span>
-                <span class="line-through">48.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image18.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ХУДИ ANTEATER «HOODIE-BLACK-ANTEATER»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">24.000 Тг.</span>
-                <span class="line-through">31.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image19.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">БОМБЕР «ЭКО ЧУДО ОГОНЁК» ГОЛУБОЙ</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">38.000 Тг.</span>
-                <span class="line-through">55.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image20.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ПЛАЩ «ЭКО ЧУДО ОГОНЁК» ЗЕЛЁНЫЙ</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">23.000 Тг.</span>
-                <span class="line-through">33.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
-              <div class="w-full relative">
-                <img class="w-full object-cover aspect-9/12" src="./assets/images/items/image21.jpg" alt="">
-                <div class="w-full h-full flex justify-between text-center text-2xl text-primary absolute top-0 p-3">
-                  <div
-                    class="h-11 aspect-square grid place-content-center p-1.5 rounded-full bg-secondary text-sm uppercase font-light">
-                    <span>new</span>
-                  </div>
-                  <div
-                    class="btn btn-circle btn-primary hover:bg-primary h-11 aspect-square grid place-content-center p-2.5 group">
-                    <svg class="group-hover:fill-secondary" width="22" height="20" viewBox="0 0 87 77" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path class="group-hover:stroke-secondary"
-                        d="M65.8704 3.3C51.5533 3.3 43.5 15.0459 43.5 20.9167C43.5 15.0459 35.4467 3.3 21.1296 3.3C6.8126 3.3 3.23334 15.0459 3.23334 20.9167C3.23334 51.7458 43.5 73.7667 43.5 73.7667C43.5 73.7667 83.7667 51.7458 83.7667 20.9167C83.7667 15.0459 80.1874 3.3 65.8704 3.3Z"
-                        stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="uppercase text-ellipsis overflow-hidden">ЮБКА «ЧУДНОЕ БЕЛОЕ ДЕЛО»</div>
-              <div class="text-xs">Коллекция 2023-2024</div>
-              <div class="flex gap-2 text-base">
-                <span class="text-secondary">21.000 Тг.</span>
-                <span class="line-through">30.000 Тг.</span>
-              </div>
-              <div class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</div>
-            </div>
-          </div>
-
+            <? } ?>
+          <? } ?> 
         </div>
         <div class="swiper-pagination"></div>
       </div>
