@@ -1,6 +1,7 @@
 <?php
   require('./handler/connect.php');
   require('./items/items.php');
+  require('./items/basketitems.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketplace</title>
   <link rel="stylesheet" href="../tailwind/output.css" />
-  <link rel="stylesheet" href="../swiper/styles/swiper.css" />
+  <link rel="stylesheet" href="../swiper/styles/swiper.css">
+  <link rel="icon" href="./assets/images/icon.png" />
 </head>
 
 <body data-theme="red">
@@ -198,7 +200,7 @@
       <div id="women" class="text-2xl font-medium mb-10">Женщинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
         <? 
-          foreach($table as $items){
+          foreach($itemsTable as $items){
             if($items[6] == 'women') DrawItemsFromDB($items);
           } 
         ?>
@@ -208,7 +210,7 @@
       <div id="men" class="text-2xl font-medium mb-10">Мужчинам</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
         <? 
-          foreach($table as $items){
+          foreach($itemsTable as $items){
             if($items[6] == 'men') DrawItemsFromDB($items);
           } 
         ?>
@@ -218,7 +220,7 @@
       <div id="sale" class="text-2xl font-medium mb-10">Распродажа</div>
       <div class="grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16 justify-items-center">
         <? 
-          foreach($table as $items){
+          foreach($itemsTable as $items){
             if($items[6] == 'sale') DrawItemsFromDB($items);
           } 
         ?>
@@ -248,7 +250,7 @@
       </div>
       <div class="swiper mySwiper order-2">
         <div class="swiper-wrapper mb-20 ">
-          <? foreach($table as $items){ ?>
+          <? foreach($itemsTable as $items){ ?>
             <? if($items[6] == 'hot'){ ?>
               <div class="swiper-slide">
                 <? DrawItemsFromDB($items); ?>
@@ -444,63 +446,26 @@
 
       <form name="basket" method="post" action="./php/handler.php">
         <div class="divider"></div>
-
-        <div class="grid gap-5">
-          <div class="flex xs:flex-row flex-col gap-5">
-            <div class="xs:w-2/3 w-full flex gap-3">
-              <img class="w-24 object-cover" src="./assets/images/items/image1.jpg" alt="">
-              <div class="flex flex-col gap-2 justify-between">
-                <div class="text-sm max-h-14 text-ellipsis overflow-hidden">
-                  Парка зимняя женская
-                  «Мариинка»
-                  Фуксия
-                </div>
-                <div class="icontent">
-                  <div class="text-xs mb-2">Размер:</div>
-                  <select name="size" class="select select-bordered w-full max-w-xs">
-                    <option value="x">X</option>
-                    <option value="xl">XL</option>
-                    <option value="xxl">XXL</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="xs:w-1/3 w-full flex xs:flex-col flex-row justify-around">
-              <div class="w-full flex xs:justify-end justify-center items-center ">
-                <div class="w-5 h-5 min-h-5 btn btn-circle btn-outline group" onclick="SubstarctValue('itemQuantity', 1, 'price')">
-                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:invert stroke-base-content" d="M0 1H7.5" />
-                  </svg>
-                </div>
-                <input id="itemQuantity" class="input w-8 h-fit m-0 p-0 bg-none border-none pointer-events-none text-center" type="number" value="1" name="quantity"/>
-                <!-- <div id="itemQuantity">1</div> -->
-                <div class="w-5 h-5 min-h-5 btn btn-circle btn-outline group" onclick="AddValue('itemQuantity', 15, 'price')">
-                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:invert stroke-base-content" d="M0 4H8" />
-                    <path class="group-hover:invert stroke-base-content" d="M4 0V8" />
-                  </svg>
-                </div>
-              </div>
-              <div class="w-full flex xs:justify-end justify-center items-center gap-2">
-                <div class="grid gap-1">
-                  <div class="flex">
-                    <div id="price" class="mr-2">35000</div>
-                    <div>Тг.</div>
-                  </div>
-                </div>
-                <div class="w-5 h-5 min-h-5 btn btn-circle btn-outline group"
-                  onclick="ResetValue('itemQuantity', 1, 'price')">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:invert stroke-base-content" d="M3.23389 8.88959L8.76555 3.11026" />
-                    <path class="group-hover:invert stroke-base-content" d="M3.11005 3.23413L8.88938 8.7658" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+        <? 
+          foreach($basketTable as $items){
+            DrawBasketItemsFromDB($items);
+          } 
+        ?>
+        
+        <div class="text-right font-medium mb-1.5">
+          <span>Сумма:</span>
+          <span id="total">
+            <? 
+              $summ = 0;
+              foreach($basketTable as $items){ 
+                $summ += (int)$items[4];
+              }
+              echo $summ;
+            ?>
+          </span>
+          <span>Тг.</span>
         </div>
-        <div class="divider"></div>
-        <div class="text-right font-medium mb-1.5">Сумма: 35.000 Тг.</div>
 
         <!-- if there is a button in form, it will close the modal -->
         <div class="font-medium mb-1.5">Данные</div>
