@@ -1,5 +1,4 @@
-<? function DrawItemsFromDB($items)
-{ ?>
+<? function DrawItemsFromDB($items) { ?>
 	<div class="max-w-72 flex flex-col gap-3 text-sm justify-between">
 		<div class="w-full relative flex">
 			<img class="w-full object-cover aspect-9/12" src="./assets/images/items/<? echo $items[1]; ?>" alt="">
