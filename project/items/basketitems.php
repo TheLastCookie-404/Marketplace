@@ -38,12 +38,12 @@
 						<div>Тг.</div>
 					</div>
 				</div>
-				<div class="w-5 h-5 min-h-5 btn btn-circle btn-outline group" onclick="ResetValue('itemQuantity<?= $items[0] ?>', 1, 'price<?= $items[0] ?>')">
+				<a href="../project/handler/delete.php?id=<?= $items[0] ?>" class="w-5 h-5 min-h-5 btn btn-circle btn-outline group">
 					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path class="group-hover:invert stroke-base-content" d="M3.23389 8.88959L8.76555 3.11026" />
 						<path class="group-hover:invert stroke-base-content" d="M3.11005 3.23413L8.88938 8.7658" />
 					</svg>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
