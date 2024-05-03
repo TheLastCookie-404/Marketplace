@@ -33,9 +33,13 @@
 			</div>
 			<div class="w-full flex xs:justify-end justify-center items-center gap-2">
 				<div class="grid gap-1">
-					<div class="flex">
-						<div id="price<?= $items[0] ?>" class="mr-2"><?= $items[4]?></div>
-						<div>Тг.</div>
+					<div class="flex flex-col">
+						<? if ($items[5] > 0 && $items[5] != null) { ?>
+							<span class="text-secondary"><? echo number_format($items[4] - ($items[4] / 100 * $items[5]), 0, '.', '.') ?> Тг.</span>
+							<span class="line-through"><? echo number_format($items[4], 0, '.', '.') ?> Тг.</span>
+						<? } else { ?>
+							<span><? echo number_format($items[4], 0, '.', '.') ?> Тг.</span>
+						<? } ?>
 					</div>
 				</div>
 				<a href="../project/handler/delete.php?id=<?= $items[0] ?>" class="w-5 h-5 min-h-5 btn btn-circle btn-outline group">

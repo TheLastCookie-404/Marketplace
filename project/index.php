@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketplace</title>
-  <link rel="stylesheet" href="../tailwind/output.css" />
+  <link rel="stylesheet" href="../tailwind/output.css?v=4" />
   <link rel="stylesheet" href="../swiper/styles/swiper.css">
   <link rel="icon" href="./assets/images/icon.png" />
 </head>
@@ -73,9 +73,11 @@
             </li>
             <li class="relative text-xxs font-sans text-white font-bold" onclick="my_modal_1.showModal()">
               <a href="#" class="btn btn-ghost btn-navig p-2"><img src="./assets/icons/basket.svg" alt=""></a>
-              <div
-                class="h-3.5 w-fit p-1 box-border rounded-full absolute z-10 right-1 bottom-1 pointer-events-none bg-accent grid place-content-center">
-                3</div>
+              <? if(count($basketTable) > 0) { ?>
+                <div class="h-3.5 w-fit p-1 box-border rounded-full absolute z-10 right-1 bottom-1 pointer-events-none bg-accent grid place-content-center">
+                  <?= count($basketTable); ?>
+                </div>
+              <? } ?>
             </li>
           </ul>
         </div>
@@ -110,7 +112,11 @@
           <a class="btn btn-ghost btn-navig text-xl justify-start p-4">
             <img src="./assets/icons/basket.svg" alt="">
             <span class="text-xl ml-4">Корзина</span>
-            <span class="bg-accent rounded-lg px-2 py-0.5 text-sm text-neutral font-sans font-medium">3</span>
+            <? if(count($basketTable) > 0) { ?>
+              <span class="bg-accent rounded-lg px-2 py-0.5 text-sm text-neutral font-sans font-medium">
+                <?= count($basketTable); ?>
+              </span>
+            <? } ?>
           </a>
         </li>
         <div class="divider md:hidden flex">Каталог</div>
