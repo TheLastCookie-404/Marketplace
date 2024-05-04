@@ -7,9 +7,9 @@
 					<div class="text-sm max-h-14 text-ellipsis overflow-hidden"><?= $items[3] ?></div>
 					<div class="icontent">
 						<div class="text-xs mb-2">Размер:</div>
-						<select name="size" class="select select-bordered w-full max-w-xs">
-							<option value="x">M</option>
-							<option value="xl">L</option>
+						<select name="size[<?= $items[7] ?>]" class="select select-bordered w-full max-w-xs">
+							<option value="m">M</option>
+							<option value="l">L</option>
 							<option value="xl">XL</option>
 							<option value="xxl">XXL</option>
 						</select>
@@ -23,7 +23,7 @@
 							<path class="group-hover:invert stroke-base-content" d="M0 1H7.5" />
 						</svg>
 					</div>
-					<input id="itemQuantity<?= $items[0] ?>" class="input w-8 h-fit m-0 p-0 bg-none border-none pointer-events-none text-center" type="number" value="1" name="quantity" />
+					<input id="itemQuantity<?= $items[0] ?>" class="input w-8 h-fit m-0 p-0 bg-none border-none pointer-events-none text-center" type="number" value="1" name="quantity[<?= $items[7] ?>]" />
 					<div class="w-5 h-5 min-h-5 btn btn-circle btn-outline group" onclick="AddValue('itemQuantity<?= $items[0] ?>', 15, 'price<?= $items[0] ?>', 'prices<?= $items[0] ?>');">
 						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path class="group-hover:invert stroke-base-content" d="M0 4H8" />

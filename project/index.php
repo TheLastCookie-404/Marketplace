@@ -450,7 +450,7 @@
         </div>
       </form>
 
-      <form name="basket" method="post" action="./php/handler.php">
+      <form name="basket" method="post" action="./mail/mail.php">
         <div class="divider"></div>
         <? 
           foreach($itemsTable as $items){
