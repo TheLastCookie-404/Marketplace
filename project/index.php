@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketplace</title>
-  <link rel="stylesheet" href="../tailwind/output.css?v=4" />
+  <link rel="stylesheet" href="../tailwind/output.css?v=5" />
   <link rel="stylesheet" href="../swiper/styles/swiper.css">
   <link rel="icon" href="./assets/images/icon.png" />
 </head>
@@ -452,26 +452,33 @@
 
       <form name="basket" method="post" action="./php/handler.php">
         <div class="divider"></div>
-        
         <? 
-          foreach($basketTable as $items){
-            DrawBasketItemsFromDB($items);
-          } 
+          foreach($itemsTable as $items){
+            foreach($basketTable as $basketItems){
+              if($items[7] === $basketItems[7]) DrawBasketItemsFromDB($items);
+            }
+          }
         ?>
-        
-        <div class="text-right font-medium mb-1.5">
+        <!-- <div class="text-right font-medium mb-1.5">
           <span>Сумма:</span>
           <span id="total">
             <? 
-              $summ = 0;
-              foreach($basketTable as $items){ 
-                $summ += (int)$items[4];
-              }
-              echo $summ;
+              // $summ = 0;
+              // foreach($itemsTable as $items){ 
+              //   foreach($basketTable as $basketItems){
+              //     if($items[7] === $basketItems[7]){
+              //       if($items[5] > 0 && $items[5] != null){
+              //         $summ += $items[4] - $items[4] / 100 * $items[5];
+              //       }
+              //       else $summ += $items[4];
+              //       }
+              //     }
+              // }
+              // echo $summ;
             ?>
           </span>
           <span>Тг.</span>
-        </div>
+        </div> -->
 
         <!-- if there is a button in form, it will close the modal -->
         <div class="font-medium mb-1.5">Данные</div>
@@ -495,7 +502,27 @@
             <span>Кредитной картой (Kaspi)</span>
           </div>
         </div>
-        <div class="text-right font-medium my-6">Итоговая сумма: 35.000 Тг.</div>
+        <!-- <div class="text-right font-medium my-6">Итоговая сумма: 35.000 Тг.</div> -->
+        <div class="text-right font-medium my-6">
+        <span>Итоговая сумма:</span>
+          <span id="total">
+            <? 
+              $summ = 0;
+              foreach($itemsTable as $items){ 
+                foreach($basketTable as $basketItems){
+                  if($items[7] === $basketItems[7]){
+                    if($items[5] > 0 && $items[5] != null){
+                      $summ += $items[4] - $items[4] / 100 * $items[5];
+                    }
+                    else $summ += $items[4];
+                    }
+                  }
+              }
+              echo $summ;
+            ?>
+          </span>
+          <span>Тг.</span>
+        </div>
         <input type="submit" value="Купить" class="btn w-full" />
 
         <div class="text-center text-sm mt-4">
