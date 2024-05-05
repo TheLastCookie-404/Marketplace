@@ -434,6 +434,7 @@
       </svg>
     </button> -->
 
+  <!-- Basket -->
   <!-- Open the modal using ID.showModal() method -->
   <dialog id="my_modal_1" class="modal">
     <div class="modal-box">
@@ -459,6 +460,11 @@
             }
           }
         ?>
+        <? if(count($basketTable) <= 0) { ?>
+          <span>В корзине пока пусто  : &#41</span>
+          <div class="divider"></div>
+        <? } ?>
+        
         <!-- <div class="text-right font-medium mb-1.5">
           <span>Сумма:</span>
           <span id="total">
