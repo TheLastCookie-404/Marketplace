@@ -490,7 +490,7 @@
         <div class="font-medium mb-1.5">Данные</div>
         <div class="grid gap-2 mb-4">
           <input type="text" placeholder="Ваше имя" class="input input-bordered w-full" name="name" required/>
-          <input type="text" placeholder="Почта" class="input input-bordered w-full" name="email" required/>
+          <input type="mail" placeholder="Почта" class="input input-bordered w-full" name="email" required/>
           <input type="text" placeholder="Номер телефона" class="input input-bordered w-full" name="phone" required/>
         </div>
         <div class="font-medium mb-1.5">Доставка</div>
@@ -500,11 +500,11 @@
         <div class="font-medium mb-2">Способ оплаты</div>
         <div class="grid gap-1.5">
           <div class="flex items-center">
-            <input type="radio" name="radio-1" value="visa" class="radio mr-2.5" required/>
+            <input type="radio" name="payment" value="visa" class="radio mr-2.5" required/>
             <span>Кредитной картой (Visa, Mastercard)</span>
           </div>
           <div class="flex items-center">
-            <input type="radio" name="radio-1" value="kaspi" class="radio mr-2.5" required/>
+            <input type="radio" name="payment" value="kaspi" class="radio mr-2.5" required/>
             <span>Кредитной картой (Kaspi)</span>
           </div>
         </div>

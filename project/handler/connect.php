@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	$db = mysqli_connect('localhost', 'root', '', 'marketplace');
 	if(!$db) die('DATABASE is not connected and it`s sad :(');
 	$itemsTable = mysqli_query($db, "SELECT * FROM `items`");
