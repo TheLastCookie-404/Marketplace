@@ -37,7 +37,16 @@ function SubstarctValue(counterId, minCounterVal, priceId, outPriceClass) {
 	}
 }
 
-
+function addIdToLocalStorage(id){
+	if (localStorage.getItem('Basket') != null) {
+		// Add new id to string
+		localStorage.setItem('Basket', `${localStorage.getItem('Basket')}, ${id}`);
+	} 
+	else {
+		// Add id to an empty string to avoid null
+		localStorage.setItem('Basket', id);
+	}
+}
 
 
 // let totalPrice = document.getElementById("total");

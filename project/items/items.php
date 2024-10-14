@@ -19,12 +19,15 @@
 		<div class="text-xs">Коллекция 2023-2024</div>
 		<div class="flex gap-2 text-base">
 			<? if ($items[5] > 0 && $items[5] != null) { ?>
-				<span class="text-secondary"><? echo number_format($items[4] - ($items[4] / 100 * $items[5]), 0, '.', '.') ?> Тг.</span>
-				<span class="line-through"><? echo number_format($items[4], 0, '.', '.') ?> Тг.</span>
+				<span class="text-secondary"><?= number_format($items[4] - ($items[4] / 100 * $items[5]), 0, '.', '.') ?> Тг.</span>
+				<span class="line-through"><?= number_format($items[4], 0, '.', '.') ?> Тг.</span>
 			<? } else { ?>
 				<span><? echo number_format($items[4], 0, '.', '.') ?> Тг.</span>
 			<? } ?>
 		</div>
-		<a href="./handler/loader.php?id=<?= $items[0] ?>" class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</a>
+		<button 
+			onclick="addIdToLocalStorage(<?= $items[0]; ?>)"
+			href="./handler/loader.php?id=<?= $items[0] ?>" 
+			class="btn btn-outline btn-neutral w-fit h-fit mt-6 text-sm uppercase">ДОБАВИТЬ В КОРЗИНУ</button>
 	</div>
 <? } ?>
